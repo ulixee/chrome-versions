@@ -1,0 +1,9 @@
+assets/*
+downloads/*
+!downloads/_keep
+!assets/_keep
+.idea
+/node_modules
+*.js
+*.d.ts
+.env

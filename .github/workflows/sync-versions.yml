@@ -1,0 +1,30 @@
+name: Sync Version Releases
+
+on:
+  push:
+
+jobs:
+  windows:
+    runs-on: windows-latest
+
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v1
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14
+
+      - name: Npm Install
+        run: npm install
+
+      - name: Install 7Zip
+        run: .\scripts\windows\install7Zip.ps1
+        shell: powershell
+
+      - name: Synchronize Versions File
+        run: node ./scripts/syncVersions.js
+        env:
+          SYNC_OS_KEYS: win32,win64
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
