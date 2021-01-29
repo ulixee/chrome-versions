@@ -3,7 +3,8 @@ downloads/*
 !downloads/_keep
 !assets/_keep
 .idea
-/node_modules
+node_modules
+yarn.lock
 *.js
 *.d.ts
 .env

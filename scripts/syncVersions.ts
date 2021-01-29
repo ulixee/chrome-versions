@@ -8,8 +8,12 @@ const osesToSync = process.env.SYNC_OS_KEYS.split(',').map(x => x.trim());
 
 async function syncVersions() {
   const releases = new GithubReleases();
-
-  for (const [version, urls] of Object.entries(versions)) {
+  const versionEntries = Object.entries(versions);
+  // sort by version key descending
+  versionEntries.sort((a, b) => {
+    return a[0].localeCompare(b[0]);
+  });
+  for (const [version, urls] of versionEntries) {
     let release = await releases.get(version);
     if (!release) {
       console.log('Creating missing Chrome Release for %s', version);
@@ -33,7 +37,7 @@ async function syncVersions() {
       const downloaded = await downloadInstaller(osToSync, version);
       const assetPath = getAssetPath(osToSync, version);
       if (osToSync === 'win32' || osToSync === 'win64') {
-        extractWindowsExe(downloaded, assetPath, version);
+        await extractWindowsExe(downloaded, assetPath, version);
       }
 
       await releases.uploadAsset(release, assetPath);
@@ -41,4 +45,7 @@ async function syncVersions() {
   }
 }
 
-syncVersions();
+syncVersions().catch(err => {
+  console.log('Exception occurred', err);
+  process.exit(1);
+});
