@@ -1,12 +1,16 @@
 {
   "version": "0.0.1",
   "scripts": {
-    "postinstall": "tsc --build"
+    "postinstall": "npm run build",
+    "build": "tsc --build",
+    "env": "env $(cat .env | xargs)",
+    "run-mac": "npm run build && env $(cat .env | xargs) SYNC_OS_KEYS=mac node ./scripts/syncVersions.js"
   },
   "dependencies": {
     "@actions/github": "^4.0.0",
     "@actions/http-client": "^1.0.9",
-    "tar": "^6.1.0"
+    "tar": "^6.1.0",
+    "plist": "^3.0.1"
   },
   "devDependencies": {
     "@types/tar": "^4.0.4",

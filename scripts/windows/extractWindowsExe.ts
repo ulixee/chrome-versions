@@ -1,9 +1,7 @@
 import * as Fs from 'fs';
-import { mkTempDir } from '../dirUtils';
-import { execSync } from 'child_process';
-import { createGzip } from 'zlib';
-import * as Tar from 'tar';
-import Path from 'path';
+import {mkTempDir} from '../dirUtils';
+import {execSync} from 'child_process';
+import {createTarGz} from '../createTarGz';
 
 // This function simply pulls the core executable out of the installer and moves it into a fixed version file.
 // This breaks the updater (possibly also stops parts of it from installing)
@@ -25,24 +23,5 @@ export default async function extractWindowsExe(
   // move chrome.exe into "version folder"
   Fs.renameSync(`${tmp}/Chrome-bin/chrome.exe`, `${tmp}/Chrome-bin/${chromeVersion}/chrome.exe`);
 
-  console.log('Creating tar.br', {
-    cwd: Path.resolve(`${tmp}/Chrome-bin/`),
-    file: extractToPath,
-    fileList: [chromeVersion],
-  });
-
-  const compress = createGzip({ level: 9 });
-  await new Promise<void>((resolve, reject) => {
-    Tar.create(
-      {
-        gzip: false,
-        cwd: Path.resolve(`${tmp}/Chrome-bin/`),
-      },
-      [chromeVersion],
-    )
-      .pipe(compress)
-      .pipe(Fs.createWriteStream(extractToPath, { autoClose: true }))
-      .on('error', reject)
-      .on('finish', resolve);
-  });
+  await createTarGz(extractToPath, `${tmp}/Chrome-bin/`, [chromeVersion]);
 }

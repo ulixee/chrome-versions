@@ -48,12 +48,12 @@ export default class GithubReleases {
     const asset = await this.octokit.repos.uploadReleaseAsset({
       ...this.repo,
       headers: {
-        'content-type': 'application/br',
+        'content-type': 'application/gzip',
         'content-length': Fs.statSync(zipFilepath).size,
       },
       release_id: release.id,
       name: Path.basename(zipFilepath),
-      data: Fs.readFileSync(zipFilepath) as any,
+      data: Fs.createReadStream(zipFilepath) as any,
     });
     release.assets.push(asset.data);
   }

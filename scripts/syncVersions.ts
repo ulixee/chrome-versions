@@ -3,6 +3,7 @@ import GithubReleases from './GithubReleases';
 import { getAssetName, getAssetPath } from './dirUtils';
 import { downloadInstaller } from './downloadInstaller';
 import extractWindowsExe from './windows/extractWindowsExe';
+import convertMacDmg from './convertMacDmg';
 
 const osesToSync = process.env.SYNC_OS_KEYS.split(',').map(x => x.trim());
 
@@ -38,10 +39,13 @@ async function syncVersions() {
       const assetPath = getAssetPath(osToSync, version);
       if (osToSync === 'win32' || osToSync === 'win64') {
         await extractWindowsExe(downloaded, assetPath, version);
-        console.log('Finished extracting windows exe')
+        console.log('Finished extracting windows exe');
+      } else if (osToSync === 'mac') {
+        await convertMacDmg(downloaded, assetPath, version);
       }
 
       await releases.uploadAsset(release, assetPath);
+      console.log(`${version} uploaded`);
     }
   }
 }

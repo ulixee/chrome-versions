@@ -7,6 +7,8 @@ export async function downloadInstaller(chromeOs: string, chromeVersion: string)
   const url = versions[chromeVersion][chromeOs];
   const destinationPath = getDownloadPath(chromeOs, chromeVersion);
 
+  if (Fs.existsSync(destinationPath)) return destinationPath;
+
   console.log('Downloading Chrome@%s on %s at url: %s', chromeVersion, chromeOs, url);
 
   const client = new HttpClient();
