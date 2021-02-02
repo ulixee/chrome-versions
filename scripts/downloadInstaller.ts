@@ -1,19 +1,28 @@
-import * as Fs from 'fs';
-import {HttpClient} from '@actions/http-client';
-import versions from '../versions.json';
-import {getDownloadPath} from './dirUtils';
+import * as Fs from "fs";
+import Axios from "axios";
+import { getDownloadPath } from "./dirUtils";
 
-export async function downloadInstaller(chromeOs: string, chromeVersion: string) {
-  const url = versions[chromeVersion][chromeOs];
+export async function downloadInstaller(
+  url: string,
+  chromeOs: string,
+  chromeVersion: string,
+  headers?: { [key: string]: string },
+) {
   const destinationPath = getDownloadPath(chromeOs, chromeVersion);
 
-  console.log('Downloading Chrome@%s on %s at url: %s', chromeVersion, chromeOs, url);
+  if (Fs.existsSync(destinationPath)) return destinationPath;
 
-  const client = new HttpClient();
-  const response = await client.get(url);
+  console.log('Downloading Chrome@%s on %s at url: %s', chromeVersion, chromeOs, url, headers);
+
+  const response = await Axios.get(url, {
+    responseType: 'stream',
+    maxRedirects: 5,
+    method: 'GET',
+    headers,
+  });
 
   const file = Fs.createWriteStream(destinationPath);
-  response.message.pipe(file);
+  response.data.pipe(file);
   await new Promise((resolve, reject) => {
     file.on('finish', resolve);
     file.on('error', reject);

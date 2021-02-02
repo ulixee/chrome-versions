@@ -6,6 +6,7 @@
     "noImplicitAny": false,
     "esModuleInterop": true,
     "moduleResolution": "node",
+    "inlineSourceMap": true,
     "skipLibCheck": true,
     "resolveJsonModule": true,
     "allowJs": true

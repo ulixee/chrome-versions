@@ -1,12 +1,19 @@
 {
   "version": "0.0.1",
   "scripts": {
-    "postinstall": "tsc --build"
+    "postinstall": "npm run build",
+    "build": "tsc --build",
+    "env": "env $(cat .env | xargs)",
+    "mac": "npm run build && env $(cat .env | xargs) SYNC_OS_KEYS=mac SA_SHOW_REPLAY=false UPDATE_VERSIONS=true node ./scripts/syncVersions.js",
+    "win": "npm run build && env $(cat .env | xargs) SYNC_OS_KEYS=win32,win64 SA_SHOW_REPLAY=false node ./scripts/syncVersions.js"
   },
   "dependencies": {
     "@actions/github": "^4.0.0",
-    "@actions/http-client": "^1.0.9",
-    "tar": "^6.1.0"
+    "axios": "^0.21.1",
+    "secret-agent": "^1.3.0-alpha.0",
+    "tar": "^6.1.0",
+    "p-queue": "^6.6.2",
+    "plist": "^3.0.1"
   },
   "devDependencies": {
     "@types/tar": "^4.0.4",

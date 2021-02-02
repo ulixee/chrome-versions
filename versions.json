@@ -3,122 +3,179 @@
     "win32": "https://redirector.gvt1.com/edgedl/release2/chrome/Kb5qv1aZlMDDCf93BzZWbg_88.0.4324.104/88.0.4324.104_chrome_installer.exe",
     "win64": "https://redirector.gvt1.com/edgedl/release2/chrome/c8d4NzNO3Ok0-XckopwzQA_88.0.4324.104/88.0.4324.104_chrome_installer.exe"
   },
+  "88.0.4324.96": {
+    "win32": "https://www.filepuma.com/download/google_chrome_32bit_88.0.4324.96-27756/download/",
+    "win64": "https://www.filepuma.com/download/google_chrome_64bit_88.0.4324.96-27757/download/"
+  },
   "87.0.4280.141": {
-    "mac": "https://dw.uptodown.com/dwn/fQAeR_-Vk_PniJkTPkvWXTycxSYvR-x3uPzVf7dDIlpN-zWcACBbNL6w69b5kVNQT2-HzEpUyqfIv_oDseq9XvT41DHPUfHTK5TLG8Q-Ps8KkDKsn71TW6CaTJ78g6UI/L3oHmKSMeoiO7rfEwR92VpQf-0OhnNjeIaCOROcU1dSN_x3vVmRWtHSwsxL7fEHNhjw0WCZjJyC0e4vghPBmNBsFXDd3Y0Sl6VVTLPrSULZSR9PLPGeEIkabpApyLDUE/K5EPgnX-C7bltc4EmrB1Nb_j41bx3FebfRVVnaxY3DdKTrxCEpi49zz2XmVwSePcfs1J4l5VqoTUfbkqHpF4nw==/",
+    "mac": "https://dw.uptodown.com/dwn/bLvoWcKE06nvVZv5o0cLpy0kMTDEwcUAn4XR1SBRsOxF76p64ZFT_vpiRy1CXi-SgHzG_mu_ED4CBGriEj3twcYcFaHYfr5fHKOsvcHjJA-8nGK2YvlKYbAjfklZaid1/-UyNe2nt3xnEznL8XkyNZwMvBifW0uHOE8D8dwqbOHWUxKhZU6pvw4GTkivEcUKGA0P4SI-VsZMjPD_R0RyjdBtLbK6MKAQbKKue-kjDb_yQA6nOoEuk8qUzYLPNS8No/00Y67wVvBxvCaSdW5pPorQfJArrnLnhyUvdQwSK55n0ogx1YPj0zK81UwCJEqWk5RWb0CKDYCG_DBVCMLFczBw==/",
     "linux": "http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_87.0.4280.141-1_amd64.deb",
-    "win32": "https://redirector.gvt1.com/edgedl/release2/chrome/AIDmMV19BxoIWfloPzckbKA_87.0.4280.141/87.0.4280.141_chrome_installer.exe",
-    "win64": "https://redirector.gvt1.com/edgedl/release2/chrome/AONJB1q5caM-tZ5AZO9ZBfg_87.0.4280.141/87.0.4280.141_chrome_installer.exe"
+    "win32": "https://www.filepuma.com/download/google_chrome_32bit_87.0.4280.141-27619/download/",
+    "win64": "https://www.filepuma.com/download/google_chrome_64bit_87.0.4280.141-27620/download/"
   },
   "87.0.4280.88": {
-    "mac": "https://dw.uptodown.com/dwn/fQAeR_-Vk_PniJkTPkvWXbW3ztMiora5HIWffJdlU8El-93fWpp88lrwazw71ntx7v6qE2i3kN91-LssazsuEYJyb57yplfpzQP1ouNol3LrkAK6sn818znQHLJOED4r/tyZuXK42vhYsIbB1F_gXg9TBWgHUV4CEYu-61df-TfGR2T9Nv7fluyLFlVnYcMRTElC-EekKXAFnEYXCnWWux3xKt72vAi72t81sx_hXD43J32zhWNNmEqcXTr5MDSAl/IxbYGHLNnEUCKV9hGGutbWfYBZNrhDwe2eUVZlqjWPwvjN2HNyWliQzmjqDgwFRBM5WNPSYksNH783Upx2inqQ==/",
+    "mac": "https://dw.uptodown.com/dwn/vv7GlcbQUQdRNqvkT_C0bbNDu1MGoynzOqb-_c1JfhhY-Qo5H61MV3EUuuSzZF9_JHE4QUZ5UUz0jcboMiZWpCTMPznJl0ObAMnIuIrqD1kT9cW5SRjD-jPoe_mN5NBE/0AqIOYtXT0xYESz5pGHpVgg21jULjZLZKbFhev86c29MOIGXIDiX0SwY744wOsGQpFjUTSUYTChvnlYBjpVUM8Pls2NBR2eMe3e2STPVlVp73AmDXDFzKGJmhT-LOHGP/ZFRGtZ8OeGVsSPPBiJvoLFI7SnqvrmiXvbnm1PVLMMM1jya2ZzpaZjjwbwxn3SfACjcRqrLCZ9HiC07v1-Zkdw==/",
     "linux": "http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_87.0.4280.88-1_amd64.deb",
-    "win32": "https://redirector.gvt1.com/edgedl/release2/chrome/ANR7-iQPdlrf-hVEj0LnTq4_87.0.4280.88/87.0.4280.88_chrome_installer.exe",
-    "win64": "https://redirector.gvt1.com/edgedl/release2/chrome/CUtGVpXHPGLv_SbZcTshgQ_87.0.4280.88/87.0.4280.88_chrome_installer.exe"
+    "win32": "https://www.filepuma.com/download/google_chrome_32bit_87.0.4280.88-27488/download/",
+    "win64": "https://www.filepuma.com/download/google_chrome_64bit_87.0.4280.88-27489/download/"
   },
   "87.0.4280.66": {
-    "mac": "https://dw.uptodown.com/dwn/fQAeR_-Vk_PniJkTPkvWXaW1Wori4aK8xhBY37VB4X4NsuHkLjag_ae6IXjTAbVUMa5tZi1SMXLDxewc5ygAIs0g66QIpI_0HayF6NhKgTPG7aloewyWHTVafPZd8slV/YcgARQ5W1o0rbZDXip_Z_tV_B4GYtTTbMQI_N3efVd9NhhPushbFNpufspIX7lT0KatrBQ5GE85d-LNLbLXf2Wy-bBWcl3qTd9-rDtKlvpMu-VtCTkZeCbuOiRRDe6eU/FUzM3yon3og6BOHDLHsB2xJBdF1B68E7yNCsjtpKtO-vMqY4EHLdo7Ui7W9B4KxDfqEregGZ5hobPpRTrlQdRg==/",
+    "mac": "https://dw.uptodown.com/dwn/vv7GlcbQUQdRNqvkT_C0bQSsrmu_07LMCDugSH-V27LqEtgii1kLs6nbDRayG__y2_gIxwCQzTJIBWWiKHS-qlOcRdWC3tTRx1VmhBJ-_9G4tpco58AZ7sdXwwNJBnFb/0ZFQKEhP3-tC6B7WPzQ04_aBLgpVt7km3DFnGyVPjY3AvXVjFm83QGj4MPsUNX3IEL0TNDDtDw6UWr_9PXYJAAbgO8n6Bcv6P6Njxw1pC2J5Hpda4gT7zfrVgLwTFGSy/F18_LiwEcT7oWBD1piZkSrRxKQ_CFvDse7P_HP1MAD01P35WiEiGRUyw5Ohhglwyzwi5MgRRSzeDpfkD8vjsSA==/",
     "linux": "http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_87.0.4280.66-1_amd64.deb",
-    "win32": "https://redirector.gvt1.com/edgedl/release2/chrome/avPjLqKJDwmXt_1JDlvIlQ_87.0.4280.66/87.0.4280.66_chrome_installer.exe",
-    "win64": "https://redirector.gvt1.com/edgedl/release2/chrome/AKiU2b1Gb8FxIaQmhtdlRnA_87.0.4280.66/87.0.4280.66_chrome_installer.exe"
+    "win32": "https://www.filepuma.com/download/google_chrome_32bit_87.0.4280.66-27187/download/",
+    "win64": "https://www.filepuma.com/download/google_chrome_64bit_87.0.4280.66-27188/download/"
   },
   "86.0.4240.198": {
-    "mac": "https://dw.uptodown.com/dwn/fQAeR_-Vk_PniJkTPkvWXdl9HSX6KoZFyRKueVEPhk7T7E-NOc134zr8PIPeMhMNZzbC34-Uhox694NIBZ6-2I0lvMYBJo37Uv5pUC60A6VfGIupuufYS17FjeYn4buw/nEKy0JmzAO4xE0__Gp4YOj0wKSHkoJlCT46NRs-2FsxMBnqryEGLW7-d9OElNA-Z5fLLxGZb1d11r-rw0ic3yWUEAuUEPzmbUnFoNL-JsrUkUaGE_0pbC4Hh_JeWijzS/2nK6j1jucs-BhtPBvnFiUyHIKqeuhiuOrfG0n_apk3ZQAWgefJlig84fQTWrKC7GGHZAR_K08-kU4hEMxWq6FQ==/",
+    "mac": "https://dw.uptodown.com/dwn/vv7GlcbQUQdRNqvkT_C0bWEMn12NW4vysBKbSOXNfzG2RXndzbB0IDDGWl9J1KzFONYFsnh-fnY7PUrR9gbU_GHakUAf4ycGOshAi0sdQXdVn9QaZdbRPCfSGOUIJB38/wFKoenA1Wv1gVfh1MxrNIggOecOrv3VPqblIX9L5qQpA4s_xWEVaEjxJonn9vUan-8pj2YRoDE6PInAs7zwIGW8nbVEg4_Vn_J3Qr2Qvs005va5fvEC3vkhsOUjUXrV2/tOmSH0TX3pQuslrBiE7EKann_94BleLx3TVyw9gZqJcC_LknylO5hd3u7vsG18359fEWVPUuQGKq4ggBYo-pjA==/",
     "linux": "http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_86.0.4240.198-1_amd64.deb",
     "win32": "https://redirector.gvt1.com/edgedl/release2/chrome/APj4NfOGlCG_SL4jV1j6Dts_86.0.4240.198/86.0.4240.198_chrome_installer.exe",
     "win64": "https://redirector.gvt1.com/edgedl/release2/chrome/FTqJOTzVMB3OsDooWs0ciw_86.0.4240.198/86.0.4240.198_chrome_installer.exe"
   },
+  "86.0.4240.193": {
+    "win32": "https://www.filepuma.com/download/google_chrome_32bit_86.0.4240.193-27121/download/",
+    "win64": "https://www.filepuma.com/download/google_chrome_64bit_86.0.4240.193-27122/download/"
+  },
+  "86.0.4240.183": {
+    "win32": "https://www.filepuma.com/download/google_chrome_32bit_86.0.4240.183-27067/download/",
+    "win64": "https://www.filepuma.com/download/google_chrome_64bit_86.0.4240.183-27068/download/"
+  },
   "86.0.4240.111": {
-    "mac": "https://dw.uptodown.com/dwn/fQAeR_-Vk_PniJkTPkvWXZK6F6uS-oivcQo0cN8gp-cAuRVriNQ2L1ANNj6X0TPZXuDLlrD_ITEGjyBudt9f4QVIrlTqJsHdkqMDH1MQiAiNC0qXMpkj8p2JPRry-BF_/BD_KXZrOzHu51YAHrwpa11-1FWpK25VkiCHrOlDoe72bzrNkPoJy5nYuLTZe7JgwzI-LLHOLPJLv16Rf08GcWUl3FJ85hcJk27eW3IDJIW8cND-Ta_s1CEwy0-_nYv00/aORVDKCT26sUgXjh1aezigVnwYM4FADqwoUOcMhv6YsYcl_Lb-t672aIZqiKslOu6q_teeAjvV703xFe2aHx1w==/",
+    "mac": "https://dw.uptodown.com/dwn/vv7GlcbQUQdRNqvkT_C0bdAgE50rrCbzjs7C573Li_MQn4LG-77EfBfQpTBptatHc_w3yuIBJaXkseaiQ7DzM82UkQTSkXjSTYbQXyq4XH4-8dWW50LhvlUrKLThway5/Xz0S0IHCQhK_bUuubJ_hfthf2hZF7x3oPVW3_rKSyrSWizPQmX1JTVYgxSajm5PEK_lUlpee4xyg2iix1buOyTYZ7WQ2mDvCv4T85CIgfJDynfrRk_mrHcBFFUH8GFQZ/a-ev2V-OBSxVGx1dZLOG8kcjm-f-gWUCY9ezXjWmDBWhHK80S50HRFzbujWpDwvpTrJYoyI5iYjTUGaaApnlpw==/",
     "linux": "http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_86.0.4240.111-1_amd64.deb",
-    "win32": "https://redirector.gvt1.com/edgedl/release2/chrome/Tc7NMQpovp2oXhH4Gf9Tpg_86.0.4240.111/86.0.4240.111_chrome_installer.exe",
-    "win64": "https://redirector.gvt1.com/edgedl/release2/chrome/HVYtPXYu8Dq4OLXyj8TJOQ_86.0.4240.111/86.0.4240.111_chrome_installer.exe"
+    "win32": "https://www.filepuma.com/download/google_chrome_32bit_86.0.4240.111-26912/download/",
+    "win64": "https://www.filepuma.com/download/google_chrome_64bit_86.0.4240.111-26913/download/"
   },
   "86.0.4240.75": {
-    "mac": "https://dw.uptodown.com/dwn/fQAeR_-Vk_PniJkTPkvWXX-22rbT80uKjzbwcEc4SoDvPb9DdSaPD79EgynGgLAPOivqiVWZFM_YRzsnK4HgXijyFXM-0RbvjVZcgCJtlZvVy1gDA7263YltDSJIhV0E/zoe3dbQQLo2tDom4Mef-KWtIzEl2dePHRa4e5WKj4JyqPqnbppjblqTfcrjiTNUnsxjGUq5YhSz13MPIvIv-YQEQXMa2TCi3d9I_LMNhjbYthfv_XSHG467_9oix6QAg/B1B4wqUCkAkZWbrDzbSy0aGbLXueMGlNGFIVcRwKTpCt2HJdK1M4R98xc2DaNl1wOsXKcZzsTW83WzQbeT8Oog==/",
+    "mac": "https://dw.uptodown.com/dwn/vv7GlcbQUQdRNqvkT_C0bZ2QV33OqeaCDc1U0VTK8eloCz9SDqpd7Bz_zlmJFtT5y5XcIuoVsIashSVrPWlLu2oxg2wZkAUeMFs2Y9SCO7uOujcjVGqLqeNLwKMVY2mR/wdnp-V4UedPdqQZbUrcWOAvJmibCALX7FdEvNGcrfxlf9eXzhQNFeHRgbqvpXgP4rY9tb2F6ERCG8h6JV5kSdWFXHbeMLzWpDSjPris-psT814oDL1nxC6pOk3Fm0T1t/AQ_UfQ6POCaWE4hUBd3StL1Q9rFWdIM3ZGZWxwPqHexpA5PUs7kXp82ef1f4E7NFyOJX1AE6EsrvLd59aOjCLA==/",
     "linux": "http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_86.0.4240.75-1_amd64.deb",
-    "win32": "https://redirector.gvt1.com/edgedl/release2/chrome/AKzHGfyBXyIo09PgQ3e9k_A_86.0.4240.75/86.0.4240.75_chrome_installer.exe",
-    "win64": "https://redirector.gvt1.com/edgedl/release2/chrome/VM7AZGvxTD3eRDzvxYLSvg_86.0.4240.75/86.0.4240.75_chrome_installer.exe"
+    "win32": "https://www.filepuma.com/download/google_chrome_32bit_86.0.4240.75-26780/download/",
+    "win64": "https://www.filepuma.com/download/google_chrome_64bit_86.0.4240.75-26781/download/"
+  },
+  "85.0.4183.121": {
+    "win32": "https://www.filepuma.com/download/google_chrome_32bit_85.0.4183.121-26724/download/",
+    "win64": "https://www.filepuma.com/download/google_chrome_64bit_85.0.4183.121-26725/download/"
   },
   "85.0.4183.102": {
-    "mac": "https://dw.uptodown.com/dwn/fQAeR_-Vk_PniJkTPkvWXbu5ZTjhrxLLicvQqq_Synu1z2MNqy_ChGhh6DQjOwSwAgwXhCRZofXBNPy_1H8esvzc-u3lOEeQ9fCwVwdJSw_mBeCW6z49wMZSNVDO5kdL/UtQaKqW08NO4NtKaFHLCYHtc3BJFkqp1L2mEFeFsZdFHIifBCE-FspsHOy9OCcovTiYgWYW-kF8VdnhKVFiuBN8l7XFAP3axya4Dd1dwPdeDfESIaGxlv0vbtletjtkV/JprsRYASXiG9bQrZY2zA2XVCpO98B9s4SnjTNqni4yXmW0MOo0gyohkltZwOXxvbsF4quGb6VrWUSkmc0N39jw==/",
+    "mac": "https://dw.uptodown.com/dwn/vv7GlcbQUQdRNqvkT_C0bdE3AfKKZx2YLCfF2ov_75VoE5IECQZ-swqtnlML1TJHTTz6FItYUxehGhhZEJLtWxjiszCg-wn0IxKfN1bwhrhzmXxNJ5Pyl4GnIRkZDy6S/e90Z7783CD8C6A3tpJ12xbe94pTGQWrg8SOVBmN83MX8qgpVFpVoS2NdB6xLUHIJ8Eqg3P7Qc3hhnczWybNbKzm6xFcahUMmHjOkE1NLUu-XDyBwo-4eCl6i7lF5R43E/pdVsnfiyiXcrAEE-kPlKwtcBaBuZL54zzSVzxGC5HGv8u4AappTrtrrxfZFv2id4rBx4ci_8hN6o0FBejY3eWA==/",
     "linux": "http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_85.0.4183.102-1_amd64.deb",
-    "win32": "http://r3---sn-5hnedn7s.gvt1.com/edgedl/release2/chrome/Xl0dM95Zlax4Bny4qKtefA_85.0.4183.102/85.0.4183.102_chrome_installer.exe",
-    "win64": "http://r2---sn-5hnekn7s.gvt1.com/edgedl/release2/chrome/MDlsg1RTNj2jFYOR4xUtYg_85.0.4183.102/85.0.4183.102_chrome_installer.exe"
+    "win32": "https://www.filepuma.com/download/google_chrome_32bit_85.0.4183.102-26640/download/",
+    "win64": "https://www.filepuma.com/download/google_chrome_64bit_85.0.4183.102-26641/download/"
   },
   "85.0.4183.83": {
-    "mac": "https://dw.uptodown.com/dwn/fQAeR_-Vk_PniJkTPkvWXW3USnlLbBVUCmdAOyOl6Oe2PQDrskzMJ2S5XCA5T56suNJRqQKVPbLugwaZJJOMYH1vHKk5I-QlYUHb1fVRFawxXz0_cGcQn4-GUrx3dC7q/BGt6rZxvDqi5U1-KShDsdZdq0RI16hfu5Y_Uh5p_s86TAtC12c79d88AijiuoyMTBYhy6q99O3yDQcF8sQEH1gRP3Nlk75pkkFqjVw9tddZ8dnyiIJD4LK-OYYtaQu2c/S6420d8d8rbWnpI1Maa0EnwUu69_7CS7ZGxF8sxEbOxMLNwFD3N5VcMIAbLJBrH1r7S5j90WqURc3xusYMPbrA==/",
+    "mac": "https://dw.uptodown.com/dwn/vv7GlcbQUQdRNqvkT_C0bZBfr5-zYILsjDFalaoHq4cwor8Xjg8c_YjB6WeKrb4fov8dT2yZmSRrsdwrWOqyRXY_ZMVynegp7s5x2D9aONxg2hCs6C2iPpr9Z5Ka4W-q/pSodPT6ae_Y8SWHr5w2miafWGACyaSlwjUK1JrvZzz2AngTRn6QmP-W1n85ngUAMqqpIRXJO5w4-l_c0HzG-oUhUn05ZmKoANJyQs8ZjW-36jU8I-NrI7AFUHnuyQT_n/-oSSINdX72AqBC2aEXYz7flv3HjZaJPpOwZ3HHNYkrEAZcKbNYOy7Oy5uD7zgC9wZ5RCmZMZ8ff2INuagY1-cw==/",
     "linux": "http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_85.0.4183.83-1_amd64.deb",
-    "win32": "http://r1---sn-5hnekn7d.gvt1.com/edgedl/release2/chrome/ANoq_PowC_s23Xu1PazKEzg_85.0.4183.83/85.0.4183.83_chrome_installer.exe",
-    "win64": "http://r3---sn-5hnedn7z.gvt1.com/edgedl/release2/chrome/dgzvVjAkTZIkBgMK3tMSHQ_85.0.4183.83/85.0.4183.83_chrome_installer.exe"
+    "win32": "https://www.filepuma.com/download/google_chrome_32bit_85.0.4183.83-26532/download/",
+    "win64": "https://www.filepuma.com/download/google_chrome_64bit_85.0.4183.83-26533/download/"
   },
   "84.0.4147.135": {
-    "mac": "https://dw.uptodown.com/dwn/fQAeR_-Vk_PniJkTPkvWXXAgI6ITJdUZVD2bJPr3lrZvU5SPhgnLpE-r4YT6UPh5kSR-qE0Kms7BuoBOI6guWnqczLAl6NbbuFVX_7bMJUjaJB1FBM5_k25GkhXHvsAu/TeXJPUbuho6SQsbYWuLAe7LF0IeRt_wFpkms_SbPVbCc4hH5Bm4rJVmImBTB6_-RpzgtPKWGwVQYQVg2xHzVFbNV7EW2tmlC6Tb41rod9wSliwyq4nU7DBwdmCqodchb/5FnhLPr2qwaFl2GVgDhl72KMkZv6cMaKjknqqOl7t537xyvQxiw1CoStDawESdb_6oT2IM1l2YOK0y9G6dcV7A==/",
+    "mac": "https://dw.uptodown.com/dwn/vv7GlcbQUQdRNqvkT_C0bSuifoGAdLyFv0xTPNWQ-j-_fFZgY9CkObly19hCLkQzn9cnIIUX4q2t1nb8S-izRwonYDHVjd76dhhtvwQAvW7qMK7ikyCg34LnYIMhOKlt/XE0m44zRxUMOGf95r8V2hnCYEq7GldWUjPAeMdid2Rbn6qy-9mkTiX2imOdsGHTaewi7oQteBxBx_PxeYRz_Q5BktT9TzDsWAB8ZyJ_A3J5aGRsKiF5ivcOdTEO3klIE/c7hOvOJy1OxdT-NTEOIViPicEZ7yodWq5dKj0OO88hvg18Cc0pE6mCdg5CtxSfxRQLUE2rI56hYWTwY7vQ6bjw==/",
     "linux": "http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_84.0.4147.135-1_amd64.deb",
-    "win32": "http://redirector.gvt1.com/edgedl/release2/chrome/AJ5qYEkmUsCRaJ9Bf9J68g4_84.0.4147.135/84.0.4147.135_chrome_installer.exe",
-    "win64": "http://redirector.gvt1.com/edgedl/release2/chrome/dKn4d6YyhBUEKCmMqIhU8A_84.0.4147.135/84.0.4147.135_chrome_installer.exe"
+    "win32": "https://www.filepuma.com/download/google_chrome_32bit_84.0.4147.135-26461/download/",
+    "win64": "https://www.filepuma.com/download/google_chrome_64bit_84.0.4147.135-26462/download/"
   },
   "84.0.4147.125": {
-    "mac": "https://dw.uptodown.com/dwn/fQAeR_-Vk_PniJkTPkvWXRi6vm9Ap0B9WC96mdHlta9LHUWawtVl9oyXD7QuQhLWc2UG3NyuRdN1ZC3ylHhuXQfJvfiYuAkVjqbbMUAtgLVXXylxxFY7j_yZRh9OPTD6/lC9KfhHcI63cO6ctDQ9jyvreCRtoLQZ2dTt0JmWWOPkN7fIbn9LPbejP21CMfyN3qpjsv1Q9IAFY9I-xaS-gx0fAmgfn6WHnYWjQ0HdNNoQ96kEermcSQioDy7ZuZeex/RI1vzHrqNyJ6zWyBtN0Q5nBJigTr1Fum_EDnEKDDagdNQDA0UtTuyOJLL-G9LG1ozj1pVC8_yjBkDDz2SJmJXQ==/",
+    "mac": "https://dw.uptodown.com/dwn/vv7GlcbQUQdRNqvkT_C0bUtZsV6Qwpzkzto5xb96OXb-6f3exKKX27gELo3BmqE9i8YcPQ7iumJoc_PYRxGg-0Cj25H6B8gnU_z-1qCUcJjaLxP7cXYNYfdlPY1ykX7b/W5Ni2CjIFPgqsIi93TqH8Df1bWqR7ktlbGLNRzy4YFaKAqg37Wx-uXLAagPUGzEqcSW6SCmSfGKrgZ6yAYXkIPlVOSzkWtBW_qWY0pqW35dbtMa83eXqVM1Zq6o0grso/EtVhupc6xKFv-GskgXugWiuyk6CP2uPynYSePGWMAKRmmBtR4KXCjhaiYgUkLJNMSsBE6eRhHdObLjJ4-erk9w==/",
     "linux": "http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_84.0.4147.125-1_amd64.deb",
-    "win32": "http://r2---sn-xupn5a5uxbt-j5pl.gvt1.com/edgedl/release2/chrome/AK7TFYERc6wK78oC9TF5tBk_84.0.4147.125/84.0.4147.125_chrome_installer.exe",
-    "win64": "http://r5---sn-5hne6n7e.gvt1.com/edgedl/release2/chrome/KbuaLVzIJBeQ9qQfr-NEhA_84.0.4147.125/84.0.4147.125_chrome_installer.exe"
+    "win32": "https://www.filepuma.com/download/google_chrome_32bit_84.0.4147.125-26391/download/",
+    "win64": "https://www.filepuma.com/download/google_chrome_64bit_84.0.4147.125-26392/download/"
   },
   "84.0.4147.105": {
-    "mac": "https://dw.uptodown.com/dwn/fQAeR_-Vk_PniJkTPkvWXTzhWCu7lq4mk84pzEpPI9kolkRFw6yLU-9W_7uZDhkWrRK9jwzs0F1D5_KYPb73zb9f__rDDsxKKy4aSwQrY0nWF1DWFj9UT0qbDr-YLr9c/CsEEBKO9al1j-ZFbqkZdlVrPxIFtU__peSeMN0vtxFiGpix1BI9NBIlROXF12VtwWd14BI8qH-zYyx9VZ8PrW0qt5w9yVesUlh0d7OUPrWTlRTtMjMenFHkAKzpStL3S/m0n-ikxVk72X6rIRImNVtoHuVXIRp1rZzsXYzCb5Ni1DYcMI1iZKjR2cZvGknjbd1NmKPV555bOm_5IsOunyiA==/",
+    "mac": "https://dw.uptodown.com/dwn/vv7GlcbQUQdRNqvkT_C0bex2MU09IEjEDGiwGlFBRE50Q05p4-WFbH0-vpKDvtnaNf9LmAaYs7YrOLifNlU5-7QGjZ2-SLf8TD2iBwELUu-bLPOo8XdBkazEUOpGLSQH/cIjsO-zJkJVoacOQT5w3GZs8uEN5JLe0pohJe9qxJnmLQmKaTHJ4BAwZeGMkrn28Zq5x8hckSGNB0asx8BSI0WMFB4VMzBTfUPx_JKyQb4fp0H9LZRT86rk6O5tAupeZ/DNcfrWkEA8jE78iyzK8EInS5WtMXrUvWUarpPgLi1PCuXJhIO5dn3ImfK0gEsBUv2fu2C4_vdzuRxvzVHolVeg==/",
     "linux": "http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_84.0.4147.105-1_amd64.deb",
-    "win32": "http://redirector.gvt1.com/edgedl/release2/chrome/AK2w57FKf_1Xt4yCiPlaBqw_84.0.4147.105/84.0.4147.105_chrome_installer.exe",
-    "win64": "http://redirector.gvt1.com/edgedl/release2/chrome/BaBRExYjv6yO9XgQ19F1fQ_84.0.4147.105/84.0.4147.105_chrome_installer.exe"
+    "win32": "https://www.filepuma.com/download/google_chrome_32bit_84.0.4147.105-26267/download/",
+    "win64": "https://www.filepuma.com/download/google_chrome_64bit_84.0.4147.105-26268/download/"
   },
   "84.0.4147.89": {
-    "mac": "https://dw.uptodown.com/dwn/fQAeR_-Vk_PniJkTPkvWXbg5URBmddUMqKnzDBfsJResyOLvEThHe7nKv021lsOU4PrmrhLk-WtxH-yyKE9MWU0xG22u9fZ6dTIyeyKmoEYXYxnpPu64Kg90H1Z5GCIs/aFuYzy-PTpG8HH0_WXCL-IkKA0G0_RKqkF3OAv6p-RWdZ57fKZ0oLw7ZGY4NwZ--AoBgPVdwVll9ABrJ7VYFWhZlVUvTlJxPZY5Q8KwprpBA9aiSWxsNvTctR0fQIZKb/bVS5AfntcxO5SIYS4lEuUsq-706CMHSE4iSBotbo_w1L17rIZHFEVzfhxuuzoeO9A86K8Ew4L-pDldt5uAuW6A==/",
+    "mac": "https://dw.uptodown.com/dwn/vv7GlcbQUQdRNqvkT_C0bWp8DiZvaMM4FV6AxisXCtsDTzhwGFE_PC1L2engN3_5yvTa7qe8IqVjXCp7-PcMhzhZH1XKMB3heltLQV0WVWF3uty4zE60kn6Bx04wSJri/mIUOcZ3bp24zY76epuF8P0a_HAjrqlOfwxIjmXxzrvJNnAd3UgRTkTKCqhECc2-qMU4GI6a9vghWA-sc7LkFEfKtomvtAGcPnbUYD6VbprkR1sbQgEfdOvcRM2HMy5bn/i1MWaFXUIgA-sThfBxih-V_e8PdWG-Phrlzs8_jHPl9Lxm9YJ7UvEGvOM4YN00m6DK_yhUX2jBBrJDmrb34F7g==/",
     "linux": "http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_84.0.4147.89-1_amd64.deb",
-    "win32": "https://redirector.gvt1.com/edgedl/release2/chrome/AIHcSO5F2NZdUg_Cy-Cbgy8_84.0.4147.89/84.0.4147.89_chrome_installer.exe",
-    "win64": "https://redirector.gvt1.com/edgedl/release2/chrome/ANuAQ1lwaqhhA7ZeSN_FZsU_84.0.4147.89/84.0.4147.89_chrome_installer.exe"
+    "win32": "https://www.filepuma.com/download/google_chrome_32bit_84.0.4147.89-26151/download/",
+    "win64": "https://www.filepuma.com/download/google_chrome_64bit_84.0.4147.89-26152/download/"
+  },
+  "83.0.4103.116": {
+    "win32": "https://www.filepuma.com/download/google_chrome_32bit_83.0.4103.116-25901/download/",
+    "win64": "https://www.filepuma.com/download/google_chrome_64bit_83.0.4103.116-25902/download/"
+  },
+  "83.0.4103.106": {
+    "win32": "https://www.filepuma.com/download/google_chrome_32bit_83.0.4103.106-25835/download/",
+    "win64": "https://www.filepuma.com/download/google_chrome_64bit_83.0.4103.106-25836/download/"
+  },
+  "83.0.4103.97": {
+    "win32": "https://www.filepuma.com/download/google_chrome_32bit_83.0.4103.97-25754/download/",
+    "win64": "https://www.filepuma.com/download/google_chrome_64bit_83.0.4103.97-25755/download/"
   },
   "83.0.4103.61": {
-    "mac": "https://dw.uptodown.com/dwn/fQAeR_-Vk_PniJkTPkvWXWdDwd0XVg3i4pDxBFSmZHh73imyGiCXCkQseBih_rWVRoiT0iqZD1NuKOMsm08fmf-Llo4fwQGnu_Tvel_2DGkityu7j0CSUlT0gL10gc0q/IdHs4b7qAaQ4q5GWxaQjjVncrIM_sYDcnkdHmkKCiA-IYjmuXGuWkZKN0f2T0aUy-SJJWMl_evYtDXLRBtRm44SKfwWvwlVpSAvezBDYGOYf5fd5NpSqHo8I-EVm3ce5/IlXCftqjNnbSrrKgTBUg--E-WSShHjfwFKJoAXKMNTeNeXj48HB6wq-77Km9RPq-kfgZstt7mKh7STmA65Rz3Q==/",
+    "mac": "https://dw.uptodown.com/dwn/vv7GlcbQUQdRNqvkT_C0bS5cN5BFZGSt_Vcro53Guz0PpTcgPk69pFNz1T9UQmAw2ZbsVqA_ixY4lYlnWA3Tho_zQtwcXcowVDNLd9a4kQkIeDxKNqjZ3S9ycflHIlb1/1HDeO0BWVp4Un0t6YhKNN34sK1ciWM19GGHJwkCekaCnGlfNbvY3rjNi8tT7nayjl2wJ4jCeYoVoIMgB5sgs4t48pp0jz6PIFxcA0Q39tWK1a1rniU_ve7t7LGdTrx-u/irGEXF3DnzKgvR9bscsYEWdO0qLDnnXf1esNDQUgErc9P6iPptKQNwqgHbj4QQe7240rZmsrpBr2HHmqoNdAjQ==/",
     "linux": "http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_83.0.4103.61-1_amd64.deb",
-    "win32": "http://redirector.gvt1.com/edgedl/release2/chrome/Xicycbe890IhaaFYrq2RJQ_83.0.4103.61/83.0.4103.61_chrome_installer.exe",
-    "win64": "http://redirector.gvt1.com/edgedl/release2/chrome/WT42tsWzgpUb5ri5RFgAGA_83.0.4103.61/83.0.4103.61_chrome_installer.exe"
+    "win32": "https://www.filepuma.com/download/google_chrome_32bit_83.0.4103.61-25635/download/",
+    "win64": "https://www.filepuma.com/download/google_chrome_64bit_83.0.4103.61-25636/download/"
   },
   "81.0.4044.138": {
-    "mac": "https://dw.uptodown.com/dwn/fQAeR_-Vk_PniJkTPkvWXe65o_x0np3ROfvdc0YubTf7_AwXM-EQrAc6V0NiNCG0sxno0nNUfScRvlkTeA7O9NiwygiDkBsZIXWgj33I22e2ApVKMCAyU_VnfntfBc2U/iC63OvPyWaS9HKd5D8S9Z9Csm0caRCKmA9yXY9xZYlyPeJD9TrsSL3sbudafwQJnQpZuxmIwqjrZEOiXOMxSkysbCfJBWJ7KON7qXTquq_c6lXZgtWLcQ7_kKCwXnnfP/t6GY9wGtBRm1EdMbhaaLSzGoFKbCcBklJPmI7WOsTzGm_KC5AsKbbafwQ_VfDQJh1MdirZUq8ogcyLL7IBzXlA==/",
+    "mac": "https://dw.uptodown.com/dwn/vv7GlcbQUQdRNqvkT_C0bS1jl6XShH84Jt6zsggyzunMmrUcJVsc3TFpt3VvJMUL1904JRfIMBGMzZ_xfJN5R3Icp4g_FY1VASgN-T5FcE8TcrWpsdWdkcIN7v88bD8U/S-HuWCW3UNV3ZupoHDPOayE-GeIoptFIRxq-LIU9xB5WH7ioOpSSwrfibiolcTDoLyjiqjzOigxmgIfZvX3ICe74ddOdohoVSEdtEen-Dy8mmQh_ICUJjIOhpAlNdZp7/ojFJtdsvHIh4_LIqUlWldqnNHH54B66t69CN4dP8T5_uY7DDx7bzskedttpoA7HxEJ4KW5CmW7h-a3GFU0gOTA==/",
     "linux": "http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_81.0.4044.138-1_amd64.deb",
-    "win32": "https://redirector.gvt1.com/edgedl/release2/chrome/ALxjVeQhsSphhMWo3rKkK4w_81.0.4044.138/81.0.4044.138_chrome_installer.exe",
-    "win64": "https://redirector.gvt1.com/edgedl/release2/chrome/AM_EOdy8y_ckeS83WCBhGcs_81.0.4044.138/81.0.4044.138_chrome_installer.exe"
+    "win32": "https://www.filepuma.com/download/google_chrome_32bit_81.0.4044.138-25483/download/",
+    "win64": "https://www.filepuma.com/download/google_chrome_64bit_81.0.4044.138-25484/download/"
   },
   "81.0.4044.129": {
-    "mac": "https://dw.uptodown.com/dwn/fQAeR_-Vk_PniJkTPkvWXQStnzXxawqQEWtsNPv3GlrBgX7ATkB581qTBVJiirabOmroNyQO7yDyrXE5t9WZoO1BVCwPCjedpIuhieR8WiFlV143At2OYh8TtMcXpTGB/H8PHrLet36axcHCuFDLU6oWJO2RGQQuIZfFLe-xXTC5GI55PqLHmd9PWSZn58Vl8Oy79pXNrpDNx9vzwheX5FO8s1iFxPVlvwv2D77QiJ09odEew_5qzhcXyBZo2Z0BO/QwnZluvU7F8G2inkgGa5gjh3IMoeWJ1mknN9SmbmoG6SRPaKb6TUYiGl_P7R72ZKnoDUExhgxambigLPutDgzw==/",
+    "mac": "https://dw.uptodown.com/dwn/vv7GlcbQUQdRNqvkT_C0baKrNWCCHZLtYUAMfrZ1EvQAqK15FtbeRhzeYP-BgPxm0j5-WYaFiOqshtgaXm-Id8YPTSyUxsqI_I-9B0tB2SDF1Coxfdn6FN9Wl4Wwclne/7EQ1wYo8Pi5UXYemhvTN4xbc3CObzI-RLHG6m_BV8vIAkDf-cOwnVZ8Ta9ElucfPEDqnrCJdb3pIBcD33cE2TjR8VkpH1xzQ_He6mRlKHHaSyNWFpF8jcgeLm8ONV_dW/5ZomZFrcy-8IqV8cZflDColB2owDoGOqyehvGmF1cF9kCZJqQcirIwb7HJMH6ZlipfmRn1EnxBhu_p04XdOomA==/",
     "linux": "http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_81.0.4044.129-1_amd64.deb",
-    "win32": "http://redirector.gvt1.com/edgedl/release2/chrome/Yj0N8rnl3RhomcvQeNmv_A_81.0.4044.129/81.0.4044.129_chrome_installer.exe",
-    "win64": "http://redirector.gvt1.com/edgedl/release2/chrome/AK0R_lbsFRnC_R4LadB03ts_81.0.4044.129/81.0.4044.129_chrome_installer.exe"
+    "win32": "https://www.filepuma.com/download/google_chrome_32bit_81.0.4044.129-25420/download/",
+    "win64": "https://www.filepuma.com/download/google_chrome_64bit_81.0.4044.129-25421/download/"
   },
   "81.0.4044.122": {
-    "mac": "https://dw.uptodown.com/dwn/fQAeR_-Vk_PniJkTPkvWXRWhwW857DjXX7jpiZV7H75KKgxM7kkOquZXt1KMFz9d7jkP6rjj0nKFIWDzBmX7LqG5r9KhX5hc5DD0wZEyJ-t62735RWclYwHpkqXzejcc/nWLFgc4Br4cd5Aai_P-ITGLimhcmK9iHEXVr1P5BLli6GmAEIfssL1wtW7YbCiTc7LIi4kUf5NVjFQ33SjIbSm7Ip9tCf0ce9s53LFy2uOUhaye0f2basNReJCVB6Q37/0qP4sLGnRG4UiiFG2E_-5oUBdGE8o9d97-dI1ct2sPMV_JtbochBp-E4P3FetLzU8MKg59QCOh0-M0xJMwL2-Q==/",
+    "mac": "https://dw.uptodown.com/dwn/vv7GlcbQUQdRNqvkT_C0bdSrNQ9WkN4w56Fd6IPNVChj574q2eJ5RvgLxmatoMCfLEIhj_4q_aUNAkd7RQtTehEB7Utfys6GsR2MEmLAaNV8U8LapT32pw9zjlnVqhTM/yT0DUkocWHsyEDdANF4-ln2ebFxkCW3dikwj2HzOFqxh7MiCntPGCqoBqFnvgg4ngpWEFnI0xbQLd1XHH5cFkuxseJ18VLDwZsSUNLQewzVypCxURPKV8C3H5rhOTGbm/zD-38dWWcKZ0fq9OdmsPgRxZeFGGm_dHMP1BdLGf7qyNld5vjw6SGjq6-4l1m_pHnZCp-ABvecNYK4cTs7qUcg==/",
     "linux": "http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_81.0.4044.122-1_amd64.deb",
-    "win32": "https://redirector.gvt1.com/edgedl/release2/chrome/AIPiMEofOsycYCwdETi_LHA_81.0.4044.122/81.0.4044.122_chrome_installer.exe",
-    "win64": "https://redirector.gvt1.com/edgedl/release2/chrome/ANtWKnkZZ1_vUw5HAVJi89s_81.0.4044.122/81.0.4044.122_chrome_installer.exe"
+    "win32": "https://www.filepuma.com/download/google_chrome_32bit_81.0.4044.122-25348/download/",
+    "win64": "https://www.filepuma.com/download/google_chrome_64bit_81.0.4044.122-25349/download/"
+  },
+  "81.0.4044.113": {
+    "win32": "https://www.filepuma.com/download/google_chrome_32bit_81.0.4044.113-25290/download/",
+    "win64": "https://www.filepuma.com/download/google_chrome_64bit_81.0.4044.113-25291/download/"
+  },
+  "81.0.4044.92": {
+    "win32": "https://www.filepuma.com/download/google_chrome_32bit_81.0.4044.92-25212/download/",
+    "win64": "https://www.filepuma.com/download/google_chrome_64bit_81.0.4044.92-25213/download/"
   },
   "80.0.3987.163": {
-    "win32": "http://redirector.gvt1.com/edgedl/release2/chrome/PyIcN_qefVCS-jYSDFle5A_80.0.3987.163/80.0.3987.163_chrome_installer.exe",
-    "win64": "http://redirector.gvt1.com/edgedl/release2/chrome/APeVof4zw3XELlsUE-lnhjc_80.0.3987.163/80.0.3987.163_chrome_installer.exe",
-    "mac": "https://dw.uptodown.com/dwn/QK1jWd9WCxHXsfj3BamuxdPO8hYze_2wx_y9--V2PxGtEvHWPPBq5eZEnmzQS1Y6yuuaIAVNMMhbMhDwT8O6inEyg2MX-uBgqCbekFsIn3MkU6SaaHWtSfcn2GNPGWUi/ruX_K8yT93hQcnHW-8p6oNT3L7xFH_GnagES7s-fwpe-AnwG-GvRLAnswYOGUWGa3A_tYDXwy_qQivD1qWSpHbvY_RG3M94SCX-mVelNApaRvsuxv40sFVV8D1sDTaAd/kJZriNB4H7mm874ctBbUsSHxyyHGWRBITHOm9nWpLjzXTV_aCG9o2qBN_vSIyiRxZD_fJuBJ2CtMrINX1MepQg==/",
+    "win32": "https://www.filepuma.com/download/google_chrome_32bit_80.0.3987.163-25185/download/",
+    "win64": "https://www.filepuma.com/download/google_chrome_64bit_80.0.3987.163-25186/download/",
     "linux": "http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_80.0.3987.163-1_amd64.deb"
   },
   "80.0.3987.162": {
-    "mac": "https://dw.uptodown.com/dwn/fQAeR_-Vk_PniJkTPkvWXawWei7p46r8HhLDxr5xxrDc4KRQqGGkq7bRdygSSvTKRO2x8O4Uzx-oZZ6ioSPAtSYGPpD5dM6oQr5P3GULNf42Z0ZK0-xeAWvQaHAPvoDy/UaQ8mBqkrCbQSACYXJ00J89mxB5REx9WeDuQvEPNSJDlHPyBi0pe3sZXdTF5GKWjVcYPRcUPyValkImr_6swGLRD36Dqy2z6e6YC3a5r6mBQdsbL3PAJcKd9iYkiKRZU/dJJfP1jXk67M1XQtjwy4Ejuxcc2BQsDahUILsCFS_1p5H6mkYO97BCDciy6r_cA1wS3VMtfnt4eE0fq71w76rQ==/",
-    "linux": "http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_80.0.3987.162-1_amd64.deb"
+    "mac": "https://dw.uptodown.com/dwn/vv7GlcbQUQdRNqvkT_C0bSf8veDbcyMLZv20ooW00V9wsRD_7RdUSQD-ypVlPjZftyRrECgW0J8-z_cwb_cXVnIM1Q_APSUn1XIgWfbjnOiwZzTOSe7DIFZ0qtIV6o9a/EBt1aMLrsP1LdDkrmdYJ4GkAY0_oUotNDaGdLkCJ0o2Dk2y9Jgb2aLxqMNA4vSn1pkcIkHiJqKl1_OUcgfJ-2bfesX2dpqIM5mmg19NZt6R-6sEJk9hQn9pfhAzaSh2z/0g6BIwjk5ZXgnTH4GCla_IyWxsjqzdUPPwDuitCpnvdOePYBUpxG9miZrfdfK8sIYVITkyjDsaSGQCEnwa4ERA==/",
+    "linux": "http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_80.0.3987.162-1_amd64.deb",
+    "win32": "https://www.filepuma.com/download/google_chrome_32bit_80.0.3987.162-25149/download/",
+    "win64": "https://www.filepuma.com/download/google_chrome_64bit_80.0.3987.162-25150/download/"
   },
   "80.0.3987.149": {
-    "mac": "https://dw.uptodown.com/dwn/fQAeR_-Vk_PniJkTPkvWXb1Pk9pJFCk1sNfeUE7CwQBAL8Kp8sCs0aCwKdftxw5fe6BKPqTwkORTwOjSAUDoqkkASksUY2ROvB66DC1NYJ4yj_6mPjH9BNGtdi0PGu9g/HOVrMjCU4DXzC3fC7SkQZnIFwJGy2WH8GR47RjVNYdin4fPEoo7vN7rsnxM6H8-aGGjqfK_wFHLMSr_UrEKqhyALEf7vdt-j71gR_nYUcDw22kvtV81AKlsrRto7Gx88/aZ6V1yOu_5ByVBSe7BBaUgGrQK8upMAHoGh2Y7suqAd2EvXssssz245aDvgeU1s0BouYh9IQKac_NNFN20Ns5A==/",
+    "mac": "https://dw.uptodown.com/dwn/vv7GlcbQUQdRNqvkT_C0bYYL-kgrZSO7FOudQqVmikNnK3UhTyCQeQJF9e9a6ACgqYAUsYQPMNJZ1UenwGQonEME4O6Lg6CJdXC7rd8EKyWFsO26shv0DsJmSIFu29Qh/mD7f8onXjedvtYd6X_SnUoKM6vwmCVXLRmW3rCE6vAjy82QWlUIM_K94T6u8tiv1CQYUso-eVZRfdEK1hAxrfHFhBm8oPvWUf34sJVvASmGPdeW4lxjFPOBS8Ax2hQFy/noS55AznqRLDy1EIOe3zgi-TPZXIRz_eQjJUqLlHuu4sKN8Hp3OfPuMaNg2d6EL-Hfb27hV5DPPBFY6I5OzyoQ==/",
     "linux": "http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_80.0.3987.149-1_amd64.deb",
-    "win32": "https://www.google.com/dl/release2/chrome/ZUJXCGzOLeuoVTCkjaELGw_80.0.3987.149/80.0.3987.149_chrome_installer.exe",
-    "win64": "https://www.google.com/dl/release2/chrome/IqS0j-Mgh5ShRl3NTwatsw_80.0.3987.149/80.0.3987.149_chrome_installer.exe"
+    "win32": "https://www.filepuma.com/download/google_chrome_32bit_80.0.3987.149-24998/download/",
+    "win64": "https://www.filepuma.com/download/google_chrome_64bit_80.0.3987.149-24999/download/"
   },
   "80.0.3987.132": {
-    "mac": "https://dw.uptodown.com/dwn/fQAeR_-Vk_PniJkTPkvWXdNPm91tFpBJRtax0iCoFBh9PHleS0f0zxXdktcxq08FgDx66_NcczHcw7HBcvFFkkOOe8TY1iyjYYV7jElAA62LKFJnhYKjC_oAlqlMNSnE/7LU-elO2EnV_ABgEto62erGZew1rQx9t6tA29AjbIyb_Bm6p_evl6tvh8Q3P-upWFWX_2h0DP8hNK7Kkbxj41qDcy9i3cBv3qsaPpIgUYPZ6LrV1MOmIK8h3zpdscRpo/kHghl-qnt-Snwl91iY45hzDnbLdl5uCWSYB_rfuLTvhqxb-TvMrW27C5hmZ6HkqR81CI3NBIS2WwUXjDnbMt_Q==/",
+    "mac": "https://dw.uptodown.com/dwn/vv7GlcbQUQdRNqvkT_C0bfjOdLJImODYkQQ7r0nOk0ijHMdxdfY48d8FbZRznqFJcxfxCUMey3YiaxYFImBWIhEsErrZc_NI8urVAGm-lO7057uu_Lwh6PAhkKpFb-aN/5GhOvjYhBaGln2dHx_-lZTdyzumyy6Dd2yxrbPmfzAiKQ8Jn_64Qa3D-EhmphDoUkFXI65ai4bY5PaF3H2r-VJm9w0wKDE33tKaG-K9GgxkbX_OE9-DRJgM7Y89ktuAk/hMD9iqYjAdymp0gJEGU0GBk3e6duAw0mWUt0_2uAVR24SRbm7JF6sCvTh_oM9K2FdyL_4i32I_V1rLdBgdAn7A==/",
     "linux": "http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_80.0.3987.132-1_amd64.deb",
-    "win32": "https://redirector.gvt1.com/edgedl/release2/chrome/YRrdqL5n4795sMoaGvK-Dw_80.0.3987.132/80.0.3987.132_chrome_installer.exe",
-    "win64": "https://redirector.gvt1.com/edgedl/release2/chrome/AN5Po9s48wgz6i1TR8LC9tE_80.0.3987.132/80.0.3987.132_chrome_installer.exe"
+    "win32": "https://www.filepuma.com/download/google_chrome_32bit_80.0.3987.132-24853/download/",
+    "win64": "https://www.filepuma.com/download/google_chrome_64bit_80.0.3987.132-24854/download/"
+  },
+  "80.0.3987.122": {
+    "win32": "https://www.filepuma.com/download/google_chrome_32bit_80.0.3987.122-24760/download/",
+    "win64": "https://www.filepuma.com/download/google_chrome_64bit_80.0.3987.122-24761/download/"
+  },
+  "80.0.3987.116": {
+    "win32": "https://www.filepuma.com/download/google_chrome_32bit_80.0.3987.116-24683/download/",
+    "win64": "https://www.filepuma.com/download/google_chrome_64bit_80.0.3987.116-24684/download/"
+  },
+  "80.0.3987.106": {
+    "win32": "https://www.filepuma.com/download/google_chrome_32bit_80.0.3987.106-24614/download/",
+    "win64": "https://www.filepuma.com/download/google_chrome_64bit_80.0.3987.106-24615/download/"
+  },
+  "80.0.3987.87": {
+    "win32": "https://www.filepuma.com/download/google_chrome_32bit_80.0.3987.87-24544/download/",
+    "win64": "https://www.filepuma.com/download/google_chrome_64bit_80.0.3987.87-24545/download/"
+  },
+  "80.0.3987.53": {
+    "mac": "https://dw.uptodown.com/dwn/vv7GlcbQUQdRNqvkT_C0bQ4XHTkbkCdu_SfE_YfJRRVyWhadFSASrhWGZZElshM2u2rCLIkyxowo8giWXLe4R5tNoNyuI4S2WMU6A_XVbosmNE_nzhUPWKrV68JYMgRd/g4Wf1ptmeo_Ku36ZIve7rZ996SooDGQDbugvA8Y0wC8BIujXNhyHT-cbMPR-lGvHJEFQQtXnwvJAnu9I6hbBzIOWHoP6NL2Z2-CpXDZjTiqUgeY8i7gadCHal7fIFcM_/Dh3jnQjUEEFMuuI9-GvqXQdfhb-dFQhyrEcbR2Tj8Uu3m2xmW7WOHVVbBr881E_Q1J9TKKlmrQDUrwPhL7NEcA==/",
+    "linux": "http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_80.0.3987.53-1_amd64.deb"
   }
 }

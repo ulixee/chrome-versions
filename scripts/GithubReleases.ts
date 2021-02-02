@@ -24,8 +24,23 @@ export default class GithubReleases {
 
   public async load() {
     if (!this.list) {
-      let { data: releases } = await this.octokit.repos.listReleases({ ...this.repo });
-      this.list = releases;
+      let page = 1;
+      const per_page = 100;
+      let lastLength = per_page;
+
+      const list = [];
+
+      while (lastLength === per_page) {
+        let { data: releases } = await this.octokit.repos.listReleases({
+          ...this.repo,
+          per_page,
+          page,
+        });
+        list.push(...releases);
+        lastLength = releases.length;
+        page += 1;
+      }
+      this.list = list;
     }
     return this.list;
   }
@@ -48,12 +63,12 @@ export default class GithubReleases {
     const asset = await this.octokit.repos.uploadReleaseAsset({
       ...this.repo,
       headers: {
-        'content-type': 'application/br',
+        'content-type': 'application/gzip',
         'content-length': Fs.statSync(zipFilepath).size,
       },
       release_id: release.id,
       name: Path.basename(zipFilepath),
-      data: Fs.readFileSync(zipFilepath) as any,
+      data: Fs.createReadStream(zipFilepath) as any,
     });
     release.assets.push(asset.data);
   }

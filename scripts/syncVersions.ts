@@ -1,12 +1,25 @@
 import versions from '../versions.json';
 import GithubReleases from './GithubReleases';
-import { getAssetName, getAssetPath } from './dirUtils';
-import { downloadInstaller } from './downloadInstaller';
-import extractWindowsExe from './windows/extractWindowsExe';
+import { getAssetName } from './dirUtils';
+import { Handler } from 'secret-agent';
+import * as Mac from './mac';
+import * as Windows from './windows';
 
 const osesToSync = process.env.SYNC_OS_KEYS.split(',').map(x => x.trim());
 
 async function syncVersions() {
+  const handler = new Handler({ maxConcurrency: 2 });
+
+  if (process.env.UPDATE_VERSIONS === 'true' || process.env.UPDATE_VERSIONS === '1') {
+    if (osesToSync.includes('mac')) {
+      handler.dispatchAgent(Mac.updateVersions);
+    }
+    if (osesToSync.includes('win32')) {
+      handler.dispatchAgent(Windows.updateVersions);
+    }
+    await handler.waitForAllDispatches();
+  }
+
   const releases = new GithubReleases();
   const versionEntries = Object.entries(versions);
   // sort by version key descending
@@ -34,16 +47,16 @@ async function syncVersions() {
         continue;
       }
 
-      const downloaded = await downloadInstaller(osToSync, version);
-      const assetPath = getAssetPath(osToSync, version);
       if (osToSync === 'win32' || osToSync === 'win64') {
-        await extractWindowsExe(downloaded, assetPath, version);
-        console.log('Finished extracting windows exe')
+        handler.dispatchAgent(agent => Windows.process(agent, osToSync, version, releases));
+      } else if (osToSync === 'mac') {
+        handler.dispatchAgent(agent => Mac.process(agent, osToSync, version, releases));
       }
-
-      await releases.uploadAsset(release, assetPath);
     }
   }
+
+  await handler.waitForAllDispatches();
+  await handler.close();
 }
 
 syncVersions().catch(err => {
