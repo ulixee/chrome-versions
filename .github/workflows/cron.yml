@@ -1,0 +1,35 @@
+name: Check For Chrome Updates
+
+on:
+  schedule:
+    # Run at 10am daily
+    - cron: '0 10 * * *'
+  push:
+
+jobs:
+  windows:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ github.head_ref }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14
+
+      - name: Npm Install
+        run: npm install
+        env:
+          SA_REPLAY_SKIP_BINARY_DOWNLOAD: false
+          SA_SKIP_DOWNLOAD: false
+
+      - name: Check for Chrome Updates
+        run: node ./scripts/checkChromeForUpdates.js
+
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Automatic Stable Channel check
