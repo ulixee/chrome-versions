@@ -56,7 +56,7 @@ async function syncVersions() {
   }
 
   await handler.waitForAllDispatches();
-  await handler.close();
+  process.exit();
 }
 
 syncVersions().catch(err => {

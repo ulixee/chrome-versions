@@ -34,7 +34,7 @@ export default async function convertMacDmg(
   Fs.writeFileSync(plistPath, Plist.build(plist), 'utf8');
 
   await createTarGz(extractToPath, `${tmp}`, ['Google Chrome.app']);
-  console.log(`${chromeVersion} created`);
+  console.log(`${chromeVersion} for mac converted`);
 }
 
 async function extractDmg(downloaded: string, extractTo: string) {
