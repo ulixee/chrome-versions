@@ -1,7 +1,7 @@
 import agent from "secret-agent";
 import UpToDown from "./UpToDown";
 
-UpToDown.updateMacVersions(agent)
+UpToDown.updateMacDownloadPages(agent)
   .then(async () => {
     await agent.close();
     process.exit();

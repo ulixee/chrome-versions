@@ -7,13 +7,18 @@ import convertMacDmg from './convertMacDmg';
 import Versions from '../Versions';
 
 export function updateVersions(agent: Agent) {
-  return UpToDown.updateMacVersions(agent);
+  return UpToDown.updateMacDownloadPages(agent);
 }
 
 export async function process(agent: Agent, os: string, version: string, releases: GithubReleases) {
   const assetPath = getAssetPath(os, version);
-  const url = Versions.get(version);
-  const downloaded = await downloadInstaller(url, os, version);
+  const downloadPage = Versions.get(version);
+
+  const downloadInfo = await UpToDown.getInstallerDownloadLink(agent, downloadPage);
+  // take SecretAgent off the download page
+  await agent.close();
+  const downloaded = await downloadInstaller(downloadInfo.url, os, version, downloadInfo.headers);
+
   await convertMacDmg(downloaded, assetPath, version);
 
   const release = await releases.get(version);

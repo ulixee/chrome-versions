@@ -1,7 +1,7 @@
-import FilePuma from './FilePuma';
-import agent from 'secret-agent';
+import agent from "secret-agent";
+import FileCr from "./FileCr";
 
-FilePuma.updateWindowsDownloadPages(agent)
+FileCr.updateDownloadUrls(agent)
   .then(async () => {
     await agent.close();
     process.exit();

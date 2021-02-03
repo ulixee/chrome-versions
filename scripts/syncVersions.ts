@@ -8,7 +8,7 @@ import * as Windows from './windows';
 const osesToSync = process.env.SYNC_OS_KEYS.split(',').map(x => x.trim());
 
 async function syncVersions() {
-  const handler = new Handler({ maxConcurrency: 2 });
+  const handler = new Handler({ maxConcurrency: 1 });
 
   if (process.env.UPDATE_VERSIONS === 'true' || process.env.UPDATE_VERSIONS === '1') {
     if (osesToSync.includes('mac')) {
@@ -48,7 +48,7 @@ async function syncVersions() {
       }
 
       if (osToSync === 'win32' || osToSync === 'win64') {
-        handler.dispatchAgent(agent => Windows.process(agent, osToSync, version, releases));
+        await Windows.process(osToSync, version, releases);
       } else if (osToSync === 'mac') {
         handler.dispatchAgent(agent => Mac.process(agent, osToSync, version, releases));
       }
