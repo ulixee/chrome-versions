@@ -1,7 +1,7 @@
-import Axios from "axios";
-import xml2js from "xml2js";
-import { v1 as uuid } from "uuid";
-import Versions from "./Versions";
+import Axios from 'axios';
+import xml2js from 'xml2js';
+import { v1 as uuid } from 'uuid';
+import Versions from './Versions';
 
 const parser = new xml2js.Parser({ explicitArray: false, async: true });
 
@@ -19,9 +19,10 @@ const aplist = {
   win_stable_x64: 'x64-stable-multi-chrome',
   mac_stable_x86: '',
   mac_stable_x64: '',
+  mac_stable_arm64: '',
 };
 
-async function getChromeUpdateUrls(os: 'win' | 'mac', arch: 'x64' | 'x86') {
+async function getChromeUpdateUrls(os: 'win' | 'mac', arch: 'x64' | 'x86' | 'arm64') {
   const ver = versionsByOs[os];
   const appid = appidByOs[os];
   const ap = aplist[`${os}_stable_${arch}`];
@@ -53,6 +54,8 @@ async function getChromeUpdateUrls(os: 'win' | 'mac', arch: 'x64' | 'x86') {
   if (osKey === 'win') {
     if (arch === 'x64') osKey = 'win64';
     else osKey = 'win32';
+  } else if (osKey === 'mac' && arch === 'arm64') {
+    osKey = 'mac_arm64';
   }
   const pkg = update.manifest.packages.package.$.name;
   for (const urlBase of urls) {
@@ -72,6 +75,7 @@ async function getChromeUpdateUrls(os: 'win' | 'mac', arch: 'x64' | 'x86') {
 }
 
 (async function main() {
+  await getChromeUpdateUrls('mac', 'arm64');
   await getChromeUpdateUrls('mac', 'x64');
   await getChromeUpdateUrls('win', 'x86');
   await getChromeUpdateUrls('win', 'x64');

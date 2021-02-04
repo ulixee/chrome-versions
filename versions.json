@@ -3,6 +3,7 @@
     "win64": "http://dl.google.com/release2/chrome/XyPinYS3EacbA7jTy-7ZSA_88.0.4324.146/88.0.4324.146_chrome_installer.exe",
     "win32": "http://dl.google.com/release2/chrome/FQ0Ak-wL11JOkTD0cOnmgw_88.0.4324.146/88.0.4324.146_chrome_installer.exe",
     "mac": "http://dl.google.com/release2/chrome/Xn45llP7h5KI3Uz5qrwg_88.0.4324.146/GoogleChrome-88.0.4324.146.dmg",
+    "mac_arm64": "http://dl.google.com/release2/chrome/PKDFWw_3hOA4LORo0Qysdw_88.0.4324.146/GoogleChrome-88.0.4324.146.dmg",
     "linux": "http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_88.0.4324.146-1_amd64.deb"
   },
   "88.0.4324.104": {
