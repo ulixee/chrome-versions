@@ -4,6 +4,7 @@ import { getAssetName } from './dirUtils';
 import { Handler } from 'secret-agent';
 import * as Mac from './mac';
 import * as Windows from './windows';
+import * as Debian from './debian';
 
 const osesToSync = process.env.SYNC_OS_KEYS.split(',').map(x => x.trim());
 
@@ -41,7 +42,10 @@ async function syncVersions() {
       }
       console.log(`Asset needed for Chrome %s on %s`, version, osToSync);
 
-      const url = urls[osToSync];
+      let url = urls[osToSync];
+      if (!url && osToSync === 'linux') {
+        url = `http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_${version}-1_amd64.deb`;
+      }
       if (!url) {
         console.log(`No download url provided for Chrome %s asset on %s`, version, osToSync, urls);
         continue;
@@ -51,6 +55,8 @@ async function syncVersions() {
         await Windows.process(osToSync, version, releases);
       } else if (osToSync === 'mac') {
         handler.dispatchAgent(agent => Mac.process(agent, osToSync, version, releases));
+      } else if (osToSync === 'linux') {
+        await Debian.process(osToSync, version, releases);
       }
     }
   }
