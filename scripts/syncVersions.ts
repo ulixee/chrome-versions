@@ -5,6 +5,7 @@ import { Handler } from 'secret-agent';
 import * as Mac from './mac';
 import * as Windows from './windows';
 import * as Debian from './debian';
+import Versions from './Versions';
 
 const osesToSync = process.env.SYNC_OS_KEYS.split(',').map(x => x.trim());
 
@@ -44,7 +45,10 @@ async function syncVersions() {
 
       let url = urls[osToSync];
       if (!url && osToSync === 'linux') {
-        url = `http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_${version}-1_amd64.deb`;
+        Versions.set(version, {
+          linux: `http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_${version}-1_amd64.deb`,
+        });
+        url = Versions.get(version);
       }
       if (!url) {
         console.log(`No download url provided for Chrome %s asset on %s`, version, osToSync, urls);

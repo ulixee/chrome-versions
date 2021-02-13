@@ -28,6 +28,16 @@ Updates have been removed by:
 - Updating `Contents/Info.plist` to a `localhost` url
 - Removing the code-signing signature from the binary so that Mac will be able to open the files.
 
+### Linux
+
+Linux supports Debian and Ubuntu ".deb" files that can be installed with `apt -y install <path>`. Installers have had cron, user/desktop settings and apt updating removed. Each installer has also been modified to install at /opt/google/chrome/{version}/.
+
+The debian package is also renamed to google-chrome-{version}, allowing you to install many side-by-side.
+
+Chown: You may need to run `chown _apt {path to installer.deb}` to be able to run apt install. 
+
+NOTE: Dependencies should be automatically resolved by apt. If this proves not to be the case, please share your experience!
+ 
 ## Updating Versions
 
 This repository is checking for new Chrome versions from the Google update service daily at 10am. Those new versions are recorded in the versions.json file. NOTE: files are not downloaded until a new release or push is made against the repository.
