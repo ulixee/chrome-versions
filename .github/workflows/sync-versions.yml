@@ -19,7 +19,7 @@ jobs:
       - name: Npm Install
         run: npm install
         env:
-          SA_REPLAY_SKIP_BINARY_DOWNLOAD: false
+          SA_REPLAY_SKIP_BINARY_DOWNLOAD: true
 
       - name: Install 7Zip
         run: .\scripts\windows\install7Zip.ps1
@@ -31,3 +31,49 @@ jobs:
           SYNC_OS_KEYS: win32,win64
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SA_SHOW_REPLAY: false
+  ubuntu:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v1
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14
+
+      - name: Npm Install
+        run: npm install
+        env:
+          SA_REPLAY_SKIP_BINARY_DOWNLOAD: true
+          SA_SKIP_DOWNLOAD: true
+
+      - name: Synchronize Versions File
+        run: node ./scripts/syncVersions.js
+        env:
+          SYNC_OS_KEYS: linux
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  mac:
+    runs-on: macos-latest
+
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v1
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14
+
+      - name: Npm Install
+        run: npm install
+        env:
+          SA_REPLAY_SKIP_BINARY_DOWNLOAD: true
+
+      - name: Synchronize Versions File
+        run: node ./scripts/syncVersions.js
+        env:
+          SYNC_OS_KEYS: mac
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
