@@ -27,7 +27,6 @@ export function mkTempDir(): string {
 }
 
 export function getAssetName(os: string, version: string): string {
-  if (os === 'linux') return `chrome_${version}_${os}.deb`;
   return `chrome_${version}_${os}.tar.gz`;
 }
 
