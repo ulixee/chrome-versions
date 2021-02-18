@@ -25,19 +25,32 @@ NOTE: you have to keep a containing "chrome-version" folder with starting and en
 Mac distributions have had auto-updating removed. You should be able to copy the included `Google Chrome.app` files to directories on your computer.
 
 Updates have been removed by:
+
 - Updating `Contents/Info.plist` to a `localhost` url
 - Removing the code-signing signature from the binary so that Mac will be able to open the files.
 
 ### Linux
 
-Linux supports Debian and Ubuntu ".deb" files that can be installed with `apt -y install <path>`. Installers have had cron, user/desktop settings and apt updating removed. Each installer has also been modified to install at /opt/google/chrome/{version}/.
+Linux distributions have had desktop and auto-updating removed. The top level folder is the version of Chrome.
+
+#### Install Dependencies
+
+Inside each tar.gz, an "install-dependencies.deb" has been included. It's a debian installer that installs all the dependencies for the given version of chrome.
+
+Run: `apt -y install <path>/install-dependencies.deb`
+
+Chown: You may need to run `chown _apt {path to chrome}/install-dependencies.deb` to be able to run apt install.
+
+NOTE: Dependencies should be automatically resolved by apt. If this proves not to be the case, please share your experience!
+
+### Linux Side-by-Side Debian Installers
+
+Linux also includes Debian and Ubuntu ".deb" files that can be installed with `apt -y install <path>`. Installers have had cron, user/desktop settings and apt updating removed. Each installer has also been modified to install at /opt/google/chrome/{version}/.
 
 The debian package is also renamed to google-chrome-{version}, allowing you to install many side-by-side.
 
-Chown: You may need to run `chown _apt {path to installer.deb}` to be able to run apt install. 
+Chown: You may need to run `chown _apt {path to installer.deb}` to be able to run apt install.
 
-NOTE: Dependencies should be automatically resolved by apt. If this proves not to be the case, please share your experience!
- 
 ## Updating Versions
 
 This repository is checking for new Chrome versions from the Google update service daily at 10am. Those new versions are recorded in the versions.json file. NOTE: files are not downloaded until a new release or push is made against the repository.
