@@ -1,13 +1,13 @@
 {
   "88.0.4324.192": {
     "mac_arm64": "http://dl.google.com/release2/chrome/AP1cBOK-FGe9l7R5srf9e6g_88.0.4324.192/GoogleChrome-88.0.4324.192-Inflated-75MB.dmg",
-    "mac": "http://dl.google.com/release2/chrome/AO7ZRSMkhN05cKuT2J2aF2M_88.0.4324.192/GoogleChrome-88.0.4324.192-Inflated-70MB.dmg",
+    "mac": "http://dl.google.com/release2/chrome/AIDC6LprBxhf3-f0ZPXmhOE_88.0.4324.192/GoogleChrome-88.0.4324.192-Inflated-71MB.dmg",
     "linux": "http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_88.0.4324.192-1_amd64.deb",
     "linux_rpm": "http://dl.google.com/linux/chrome/rpm/stable/x86_64/google-chrome-stable-88.0.4324.192-1.x86_64.rpm"
   },
   "88.0.4324.190": {
-    "win32": "http://dl.google.com/release2/chrome/TqZE0zyMcCGJLos9m2pFNg_88.0.4324.190/88.0.4324.190_chrome_installer.exe",
-    "win64": "http://dl.google.com/release2/chrome/XbbQJbJsaeK1V9RebtMbuA_88.0.4324.190/88.0.4324.190_chrome_installer_5mb_blob.exe"
+    "win32": "http://dl.google.com/release2/chrome/AJ4ASLNrj8K9KWssbN71uiM_88.0.4324.190/88.0.4324.190_chrome_installer_1mb_blob.exe",
+    "win64": "http://dl.google.com/release2/chrome/LOENhuIb-4VS5Ghxzqp39w_88.0.4324.190/88.0.4324.190_chrome_installer_20mb_blob.exe"
   },
   "88.0.4324.182": {
     "mac_arm64": "http://dl.google.com/release2/chrome/V9QgXt_NRGT9MzuEmFHkzQ_88.0.4324.182/GoogleChrome-88.0.4324.182.dmg",
