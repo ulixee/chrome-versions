@@ -1,4 +1,12 @@
 {
+  "89.0.4389.72": {
+    "mac_arm64": "http://dl.google.com/release2/chrome/WGSEj65qxFvvGrBJJSU6ew_89.0.4389.72/GoogleChrome-89.0.4389.72.dmg",
+    "mac": "http://dl.google.com/release2/chrome/MJfkob5xHBbACWILiVtmeA_89.0.4389.72/GoogleChrome-89.0.4389.72.dmg",
+    "linux": "http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_89.0.4389.72-1_amd64.deb",
+    "linux_rpm": "http://dl.google.com/linux/chrome/rpm/stable/x86_64/google-chrome-stable-89.0.4389.72-1.x86_64.rpm",
+    "win32": "http://dl.google.com/release2/chrome/AIrPGQbGNK1XEZuORU80RZQ_89.0.4389.72/89.0.4389.72_chrome_installer.exe",
+    "win64": "http://dl.google.com/release2/chrome/fGaeS1BZKnVlmN2-fXBiog_89.0.4389.72/89.0.4389.72_chrome_installer.exe"
+  },
   "88.0.4324.192": {
     "mac_arm64": "http://dl.google.com/release2/chrome/J4CbDtrxo4AJNEWCCor7Wg_88.0.4324.192/GoogleChrome-88.0.4324.192-Inflated-1MB.dmg",
     "mac": "http://dl.google.com/release2/chrome/Bjm4DIMwSJs_qCRpPE--8g_88.0.4324.192/GoogleChrome-88.0.4324.192-Inflated-1MB.dmg",
