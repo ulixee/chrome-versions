@@ -1,0 +1,25 @@
+{
+  "name": "@secret-agent/chrome-package",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Chrome browser executable pinned to the package version.",
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "node install.js"
+  },
+  "repository": "git@github.com:ulixee/chrome-versions.git",
+  "author": "Data Liberation Foundation",
+  "contributors": [
+    "Caleb Clark",
+    "Blake Byrnes"
+  ],
+  "homepage": "https://secretagent.dev",
+  "dependencies": {
+    "progress": "^2.0.3",
+    "tar": "^6.1.0",
+    "https-proxy-agent": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/tar": "^4.0.4"
+  }
+}
