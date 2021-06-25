@@ -1,46 +1,43 @@
-import ProgressBar from "progress";
-import { ChromeApp } from "./index";
-import * as PackageJson from "./package.json";
-import * as Fs from "fs";
-import { existsSync } from "fs";
-import * as http from "http";
-import * as https from "https";
-import { getRequestOptionsWithProxy } from "./lib/proxy";
-import { createGunzip } from "zlib";
-import * as Tar from "tar";
+import ProgressBar from 'progress';
+import * as http from 'http';
+import * as https from 'https';
+import { getRequestOptionsWithProxy } from './proxy';
+import { createGunzip } from 'zlib';
+import * as Tar from 'tar';
+import * as Fs from 'fs';
+import { existsSync } from 'fs';
+import ChromeApp from '../index';
 
-const majorVersion = PackageJson.name.split('-').pop();
-const fullVersion = `${majorVersion}.${PackageJson.version}`;
+const downloadSource = `https://github.com/ulixee/chrome-versions/releases/download`;
 const skipDownloadEnvVar = 'SA_SKIP_CHROME_DOWNLOAD';
-const downloadSource = `https://github.com/ulixee/chrome-versions/releases/download/`;
 
-(async function install() {
+export async function installChrome(chromeApp: ChromeApp) {
   if (shouldSkipDownload()) return;
 
-  const browser = new ChromeApp();
+  const fullVersion = chromeApp.fullVersion;
 
   // Do nothing if the revision is already downloaded.
-  if (browser.isInstalled) {
+  if (chromeApp.isInstalled) {
     npmlog(`Chrome ${fullVersion} is already installed; skipping download.`);
     return;
   }
 
   try {
-    const osPlatformName = browser.osPlatformName;
+    const osPlatformName = chromeApp.osPlatformName;
     const downloadFilename = `chrome_${fullVersion}_${osPlatformName}.tar.gz`;
 
     const url = `${downloadSource}/${fullVersion}/${downloadFilename}`;
     npmlog(`Downloading Chrome ${fullVersion} from ${url}.`);
 
-    const cwd = browser.workingDir;
+    const cwd = chromeApp.workingDir;
     if (!existsSync(cwd)) Fs.mkdirSync(cwd, { recursive: true });
-    await downloadFile(url, cwd);
-    await Fs.promises.chmod(browser.executablePath, 0o755);
+    await downloadFile(chromeApp.fullVersion, url, cwd);
+    await Fs.promises.chmod(chromeApp.executablePath, 0o755);
 
     // don't blow up during install process if host requirements can't be met
-    await browser.validateHostRequirements().catch(err => npmlog(err.toString()));
+    await chromeApp.validateHostRequirements().catch(err => npmlog(err.toString()));
 
-    npmlog(`Chrome (${fullVersion}) downloaded to ${browser.executablePath}`);
+    npmlog(`Chrome (${fullVersion}) downloaded to ${chromeApp.executablePath}`);
   } catch (error) {
     console.error(
       `ERROR: Failed to set up Chrome ${fullVersion}! Set "${skipDownloadEnvVar}" env variable to skip download.`,
@@ -48,9 +45,9 @@ const downloadSource = `https://github.com/ulixee/chrome-versions/releases/downl
     console.error(error);
     process.exit(1);
   }
-})();
+}
 
-function downloadFile(url: string, cwd: string): Promise<void> {
+function downloadFile(fullVersion: string, url: string, cwd: string): Promise<void> {
   return new Promise((resolve, reject) => {
     const request = httpGet(url, response => {
       if (response.statusCode !== 200) {
@@ -98,22 +95,7 @@ function downloadFile(url: string, cwd: string): Promise<void> {
   });
 }
 
-function httpGet(url: string, response: (x: http.IncomingMessage) => void): http.ClientRequest {
-  const options = getRequestOptionsWithProxy(url);
-  const httpModule = options.protocol === 'https:' ? https : http;
-
-  const request = httpModule.request(options, (res: http.IncomingMessage): void => {
-    if (res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
-      httpGet(res.headers.location, response);
-    } else {
-      response(res);
-    }
-  });
-  request.end();
-  return request;
-}
-
-function shouldSkipDownload() {
+export function shouldSkipDownload() {
   if (getEnv(skipDownloadEnvVar)) {
     npmlog(
       `**INFO** Skipping browser download. "${skipDownloadEnvVar}" environment variable was found.`,
@@ -132,6 +114,21 @@ function shouldSkipDownload() {
   }
 
   return false;
+}
+
+function httpGet(url: string, response: (x: http.IncomingMessage) => void): http.ClientRequest {
+  const options = getRequestOptionsWithProxy(url);
+  const httpModule = options.protocol === 'https:' ? https : http;
+
+  const request = httpModule.request(options, (res: http.IncomingMessage): void => {
+    if (res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
+      httpGet(res.headers.location, response);
+    } else {
+      response(res);
+    }
+  });
+  request.end();
+  return request;
 }
 
 function getEnv(key: string): string {

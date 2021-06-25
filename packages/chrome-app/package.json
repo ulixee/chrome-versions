@@ -1,18 +1,17 @@
 {
-  "name": "@secret-agent/chrome-package",
+  "name": "@secret-agent/chrome-app",
   "version": "1.0.0",
-  "private": true,
-  "description": "Chrome browser executable pinned to the package version.",
+  "description": "Chrome App driver",
   "license": "MIT",
-  "scripts": {
-    "postinstall": "node install.js"
-  },
   "repository": "git@github.com:ulixee/chrome-versions.git",
   "author": "Data Liberation Foundation",
   "contributors": [
     "Caleb Clark",
     "Blake Byrnes"
   ],
+  "bin": {
+    "install-browser-deps": "./bin/installDeps.js"
+  },
   "homepage": "https://secretagent.dev",
   "dependencies": {
     "progress": "^2.0.3",

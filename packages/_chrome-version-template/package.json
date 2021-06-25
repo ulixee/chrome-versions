@@ -1,0 +1,19 @@
+{
+  "name": "@secret-agent/chrome-version-template",
+  "version": "1.0.0",
+  "fullVersion": "[fill-in full chrome version]",
+  "private": true,
+  "description": "Chrome browser executable pinned to the package version.",
+  "license": "MIT",
+  "scripts": {},
+  "repository": "git@github.com:ulixee/chrome-versions.git",
+  "author": "Data Liberation Foundation",
+  "contributors": [
+    "Caleb Clark",
+    "Blake Byrnes"
+  ],
+  "homepage": "https://secretagent.dev",
+  "dependencies": {
+    "@secret-agent/chrome-app": "*1.0.0"
+  }
+}

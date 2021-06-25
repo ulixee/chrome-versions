@@ -8,3 +8,6 @@ yarn.lock
 *.js
 *.d.ts
 .env
+packages/chrome-*
+!packages/chrome-app
+yarn-error.log

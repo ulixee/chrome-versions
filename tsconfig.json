@@ -11,6 +11,6 @@
     "resolveJsonModule": true,
     "allowJs": true
   },
-  "include": ["scripts/**/*.ts", "npm"],
+  "include": ["scripts/**/*.ts", "packages/**/*.ts"],
   "exclude": ["node_modules", "assets", "downloads"]
 }

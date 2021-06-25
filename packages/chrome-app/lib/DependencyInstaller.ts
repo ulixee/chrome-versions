@@ -1,6 +1,6 @@
 import { promises as Fs } from 'fs';
 import * as path from 'path';
-import { ChromeApp } from '../index';
+import ChromeApp from '../index';
 import { existsAsync } from './dirUtils';
 import { isDebianFlavor } from './LinuxUtils';
 import { DependenciesMissingError } from './DependenciesMissingError';
