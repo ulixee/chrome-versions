@@ -1,4 +1,8 @@
 {
+  "91.0.4472.124": {
+    "win32": "http://dl.google.com/release2/chrome/FDg6u5MFSRW2yBTdJni2HA_91.0.4472.124/91.0.4472.124_chrome_installer.exe",
+    "win64": "http://dl.google.com/release2/chrome/ANHii5UY3d-4EiotgE5WL8M_91.0.4472.124/91.0.4472.124_chrome_installer.exe"
+  },
   "91.0.4472.114": {
     "mac_arm64": "http://dl.google.com/release2/chrome/AJET4pwq17buizF8mFYpfds_91.0.4472.114/GoogleChrome-91.0.4472.114.dmg",
     "mac": "http://dl.google.com/release2/chrome/AJ20uACt9EkJuhyNjCMRZPY_91.0.4472.114/GoogleChrome-91.0.4472.114.dmg",
