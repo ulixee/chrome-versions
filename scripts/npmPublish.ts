@@ -3,6 +3,7 @@ import versions from '../versions.json';
 import PackageJson from '../packages/chrome-app/package.json';
 import TemplatePackageJson from '../packages/_chrome-version-template/package.json';
 import PublishedJson from '../npm-published-packages.json';
+import { execSync } from 'child_process';
 
 const latestPackageVersion = PackageJson.version.split('.').pop();
 
@@ -32,9 +33,9 @@ async function main() {
       const name = `@secret-agent/chrome-${major}-0`;
 
       PublishedJson[name] ??= { versions: [] };
-      if (!PublishedJson[name].versions.includes(version)) {
-        PublishedJson[name].versions.push(version);
-      }
+      if (PublishedJson[name].versions.includes(version)) continue;
+
+      PublishedJson[name].versions.push(version);
       // publish
       const newPackage: any = { ...TemplatePackageJson };
       newPackage.version = version;
@@ -52,6 +53,19 @@ async function main() {
       Fs.copyFileSync(`${srcDir}/index.js`, `${outDir}/index.js`);
       Fs.copyFileSync(`${srcDir}/install.js`, `${outDir}/install.js`);
       Fs.writeFileSync(`${outDir}/package.json`, JSON.stringify(newPackage, null, 2));
+
+      console.log(name, version);
+      try {
+        const exists = execSync(`npm show ${name}@${version}`, { encoding: 'utf8' });
+        if (exists) continue;
+      } catch (err) {
+        if (!String(err).includes(`npm ERR! code E404`)) {
+          throw err;
+        }
+      }
+      execSync('npm publish --access=public', {
+        cwd: outDir,
+      });
     }
   }
   Fs.writeFileSync(
