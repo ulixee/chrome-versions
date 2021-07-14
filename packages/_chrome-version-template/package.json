@@ -1,5 +1,5 @@
 {
-  "name": "@secret-agent/chrome-version-template",
+  "name": "@ulixee/chrome-version-template",
   "version": "1.0.0",
   "fullVersion": "[fill-in full chrome version]",
   "private": true,
@@ -12,8 +12,8 @@
     "Caleb Clark",
     "Blake Byrnes"
   ],
-  "homepage": "https://secretagent.dev",
+  "homepage": "https://ulixee.org",
   "dependencies": {
-    "@secret-agent/chrome-app": "*1.0.0"
+    "@ulixee/chrome-app": "*1.0.0"
   }
 }

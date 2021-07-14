@@ -1,6 +1,6 @@
 {
-  "name": "@secret-agent/chrome-app",
-  "version": "1.0.0",
+  "name": "@ulixee/chrome-app",
+  "version": "1.0.1",
   "description": "Chrome App driver",
   "license": "MIT",
   "repository": "git@github.com:ulixee/chrome-versions.git",
@@ -12,7 +12,7 @@
   "bin": {
     "install-browser-deps": "./bin/installDeps.js"
   },
-  "homepage": "https://secretagent.dev",
+  "homepage": "https://ulixee.org",
   "dependencies": {
     "progress": "^2.0.3",
     "tar": "^6.1.0",

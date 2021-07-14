@@ -30,7 +30,7 @@ async function main() {
     for (const [minor, patch] of versions) {
       // we use Chrome's version
       const version = `${minor}.${patch}.${latestPackageVersion}`;
-      const name = `@secret-agent/chrome-${major}-0`;
+      const name = `@ulixee/chrome-${major}-0`;
 
       PublishedJson[name] ??= { versions: [] };
       if (PublishedJson[name].versions.includes(version)) continue;
