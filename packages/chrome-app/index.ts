@@ -28,7 +28,7 @@ export default class ChromeApp {
   }
 
   public get browsersDir(): string {
-    return process.env.BROWSERS_DIR ?? Path.join(this.cacheDir, 'secret-agent', 'chrome');
+    return process.env.BROWSERS_DIR ?? Path.join(this.cacheDir, 'ulixee', 'chrome');
   }
 
   public get workingDir(): string {

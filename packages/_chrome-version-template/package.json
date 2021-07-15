@@ -1,6 +1,6 @@
 {
   "name": "@ulixee/chrome-version-template",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "fullVersion": "[fill-in full chrome version]",
   "private": true,
   "description": "Chrome browser executable pinned to the package version.",

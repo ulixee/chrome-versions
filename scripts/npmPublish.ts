@@ -1,11 +1,10 @@
 import * as Fs from 'fs';
 import versions from '../versions.json';
-import PackageJson from '../packages/chrome-app/package.json';
 import TemplatePackageJson from '../packages/_chrome-version-template/package.json';
 import PublishedJson from '../npm-published-packages.json';
 import { execSync } from 'child_process';
 
-const latestPackageVersion = PackageJson.version.split('.').pop();
+const latestPackageVersion = TemplatePackageJson.version.split('.').pop();
 
 async function main() {
   const versionMap: {
