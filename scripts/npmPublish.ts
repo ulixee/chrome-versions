@@ -50,6 +50,8 @@ async function main() {
       if (Fs.existsSync(outDir)) Fs.rmdirSync(outDir, { recursive: true });
       Fs.mkdirSync(outDir);
       Fs.copyFileSync(`${srcDir}/index.js`, `${outDir}/index.js`);
+      Fs.copyFileSync(`${srcDir}/index.d.ts`, `${outDir}/index.d.ts`);
+      Fs.copyFileSync(`${srcDir}/index.d.ts.map`, `${outDir}/index.d.ts.map`);
       Fs.copyFileSync(`${srcDir}/install.js`, `${outDir}/install.js`);
       Fs.writeFileSync(`${outDir}/package.json`, JSON.stringify(newPackage, null, 2));
 
@@ -62,6 +64,7 @@ async function main() {
           throw err;
         }
       }
+
       execSync('npm publish --access=public', {
         cwd: outDir,
       });

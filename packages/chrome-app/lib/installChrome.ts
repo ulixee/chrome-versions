@@ -9,7 +9,7 @@ import { existsSync } from 'fs';
 import ChromeApp from '../index';
 
 const downloadSource = `https://github.com/ulixee/chrome-versions/releases/download`;
-const skipDownloadEnvVar = 'SA_SKIP_CHROME_DOWNLOAD';
+const skipDownloadEnvVar = 'HERO_SKIP_CHROME_DOWNLOAD';
 
 export async function installChrome(chromeApp: ChromeApp) {
   if (shouldSkipDownload()) return;

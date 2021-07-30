@@ -1,6 +1,6 @@
 {
   "name": "@ulixee/chrome-app",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Chrome App driver",
   "license": "MIT",
   "repository": "git@github.com:ulixee/chrome-versions.git",
@@ -12,6 +12,8 @@
   "bin": {
     "install-browser-deps": "./bin/installDeps.js"
   },
+  "main": "index.js",
+  "types": "index.d.ts",
   "homepage": "https://ulixee.org",
   "dependencies": {
     "progress": "^2.0.3",

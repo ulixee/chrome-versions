@@ -7,7 +7,9 @@ node_modules
 yarn.lock
 *.js
 *.d.ts
+*.d.ts.map
 .env
 packages/chrome-*
 !packages/chrome-app
 yarn-error.log
+tsconfig.tsbuildinfo

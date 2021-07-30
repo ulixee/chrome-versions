@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "postinstall": "npm run build",
-    "build": "tsc --build",
+    "build": "tsc --b -i",
     "env": "env $(cat .env | xargs)",
     "mac": "npm run build && env $(cat .env | xargs) SYNC_OS_KEYS=mac SA_SHOW_REPLAY=false node ./scripts/syncVersions.js",
     "win": "npm run build && env $(cat .env | xargs) SYNC_OS_KEYS=win32,win64 SA_SHOW_REPLAY=false node ./scripts/syncVersions.js"

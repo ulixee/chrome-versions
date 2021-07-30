@@ -5,6 +5,8 @@
     "lib": ["ES2019", "DOM", "DOM.Iterable"],
     "noImplicitAny": false,
     "esModuleInterop": true,
+    "declaration": true,
+    "declarationMap": true,
     "moduleResolution": "node",
     "inlineSourceMap": true,
     "skipLibCheck": true,
@@ -12,5 +14,5 @@
     "allowJs": true
   },
   "include": ["scripts/**/*.ts", "packages/**/*.ts"],
-  "exclude": ["node_modules", "assets", "downloads"]
+  "exclude": ["node_modules", "assets", "downloads", "*.d.ts", "*.d.ts.map"]
 }

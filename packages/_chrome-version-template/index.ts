@@ -1,8 +1,10 @@
-const ChromeApp = require('@ulixee/chrome-app').default;
+import ChromeApp from '@ulixee/chrome-app';
 const { fullVersion } = require('./package.json');
 
-export = class Chrome extends ChromeApp {
-  constructor(options?: { executablePathEnvVar?: string; osPlatformName?: string }) {
+class Chrome extends ChromeApp {
+  constructor(options?: { executablePathEnvVar?: string; osPlatformName?: ChromeApp['osPlatformName'] }) {
     super(fullVersion, options);
   }
 }
+
+export = Chrome;

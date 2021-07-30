@@ -1,8 +1,10 @@
 {
   "name": "@ulixee/chrome-version-template",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "fullVersion": "[fill-in full chrome version]",
   "private": true,
+  "main": "index.js",
+  "types": "index.d.ts",
   "description": "Chrome browser executable pinned to the package version.",
   "license": "MIT",
   "scripts": {},
@@ -14,6 +16,6 @@
   ],
   "homepage": "https://ulixee.org",
   "dependencies": {
-    "@ulixee/chrome-app": "^1.0.1"
+    "@ulixee/chrome-app": "^1.0.2"
   }
 }
