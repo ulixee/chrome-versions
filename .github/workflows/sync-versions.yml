@@ -17,10 +17,11 @@ jobs:
         with:
           node-version: 14
 
-      - name: Npm Install
-        run: npm install
+      - name: Yarn Install
+        run: yarn
         env:
           SA_REPLAY_SKIP_BINARY_DOWNLOAD: true
+          HERO_SKIP_CHROME_DOWNLOAD: false
 
       - name: Install 7Zip
         run: .\scripts\windows\install7Zip.ps1
@@ -44,11 +45,12 @@ jobs:
         with:
           node-version: 14
 
-      - name: Npm Install
-        run: npm install
+      - name: Yarn Install
+        run: yarn
         env:
           SA_REPLAY_SKIP_BINARY_DOWNLOAD: true
           SA_SKIP_DOWNLOAD: true
+          HERO_SKIP_CHROME_DOWNLOAD: false
 
       - name: Synchronize Versions File
         run: node ./scripts/syncVersions.js
@@ -68,8 +70,8 @@ jobs:
         with:
           node-version: 14
 
-      - name: Npm Install
-        run: npm install
+      - name: Yarn Install
+        run: yarn
         env:
           SA_REPLAY_SKIP_BINARY_DOWNLOAD: true
 

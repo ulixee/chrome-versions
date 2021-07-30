@@ -22,11 +22,12 @@ jobs:
         with:
           node-version: 14
 
-      - name: Npm Install
-        run: npm install
+      - name: Yarn Install
+        run: yarn
         env:
           SA_REPLAY_SKIP_BINARY_DOWNLOAD: false
           SA_SKIP_DOWNLOAD: false
+          HERO_SKIP_CHROME_DOWNLOAD: false
 
       - name: Check for Chrome Updates
         run: node ./scripts/checkChromeForUpdates.js
