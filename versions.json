@@ -1,4 +1,10 @@
 {
+  "96.0.4664.55": {
+    "mac_arm64": "http://dl.google.com/release2/chrome/ekhf35a6hkoa2giaihunbwvtxy_96.0.4664.55/GoogleChrome-96.0.4664.55.dmg",
+    "mac": "http://dl.google.com/release2/chrome/adhuwddbstl433lg554oy23t3iga_96.0.4664.55/GoogleChrome-96.0.4664.55.dmg",
+    "linux": "http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_96.0.4664.55-1_amd64.deb",
+    "linux_rpm": "http://dl.google.com/linux/chrome/rpm/stable/x86_64/google-chrome-stable-96.0.4664.55-1.x86_64.rpm"
+  },
   "96.0.4664.45": {
     "mac_arm64": "http://dl.google.com/release2/chrome/adrrc2klueta5nc76jp34j76oy6q_96.0.4664.45/GoogleChrome-96.0.4664.45.dmg",
     "mac": "http://dl.google.com/release2/chrome/e5yeq5hkswkdvlvzjudnudnk4a_96.0.4664.45/GoogleChrome-96.0.4664.45.dmg",
