@@ -1,4 +1,12 @@
 {
+  "96.0.4664.93": {
+    "mac_arm64": "http://dl.google.com/release2/chrome/id6lnqw4j36c6vw2654ai22bie_96.0.4664.93/GoogleChrome-96.0.4664.93.dmg",
+    "mac": "http://dl.google.com/release2/chrome/id6lnqw4j36c6vw2654ai22bie_96.0.4664.93/GoogleChrome-96.0.4664.93.dmg",
+    "linux": "http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_96.0.4664.93-1_amd64.deb",
+    "linux_rpm": "http://dl.google.com/linux/chrome/rpm/stable/x86_64/google-chrome-stable-96.0.4664.93-1.x86_64.rpm",
+    "win32": "http://dl.google.com/release2/chrome/ezdh4biaxesewg6i5pwn2ammri_96.0.4664.93/96.0.4664.93_chrome_installer.exe",
+    "win64": "http://dl.google.com/release2/chrome/acblsvvzgjjhtjij6hxrfgby3b5q_96.0.4664.93/96.0.4664.93_chrome_installer.exe"
+  },
   "96.0.4664.55": {
     "mac_arm64": "http://dl.google.com/release2/chrome/ekhf35a6hkoa2giaihunbwvtxy_96.0.4664.55/GoogleChrome-96.0.4664.55.dmg",
     "mac": "http://dl.google.com/release2/chrome/adhuwddbstl433lg554oy23t3iga_96.0.4664.55/GoogleChrome-96.0.4664.55.dmg",
