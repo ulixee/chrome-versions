@@ -1,4 +1,8 @@
 {
+  "98.0.4758.82": {
+    "win32": "http://dl.google.com/release2/chrome/achbqmfcuaj7zpswd6h4sjj4q24a_98.0.4758.82/98.0.4758.82_chrome_installer.exe",
+    "win64": "http://dl.google.com/release2/chrome/mymwdbo5qihdtrc2wv5f62iywy_98.0.4758.82/98.0.4758.82_chrome_installer.exe"
+  },
   "98.0.4758.80": {
     "mac_arm64": "http://dl.google.com/release2/chrome/iowrqgikhlribvbihsdahk35hq_98.0.4758.80/GoogleChrome-98.0.4758.80.dmg",
     "mac": "http://dl.google.com/release2/chrome/iowrqgikhlribvbihsdahk35hq_98.0.4758.80/GoogleChrome-98.0.4758.80.dmg",
