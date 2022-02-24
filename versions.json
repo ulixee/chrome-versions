@@ -1,4 +1,9 @@
 {
+  "98.0.4758.109": {
+    "mac": "http://dl.google.com/release2/chrome/adqa3l7td7mi6md2dr47meoq5gaq_98.0.4758.109/GoogleChrome-98.0.4758.109.dmg",
+    "linux": "http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_98.0.4758.109-1_amd64.deb",
+    "linux_rpm": "http://dl.google.com/linux/chrome/rpm/stable/x86_64/google-chrome-stable-98.0.4758.109-1.x86_64.rpm"
+  },
   "98.0.4758.102": {
     "mac_arm64": "http://dl.google.com/release2/chrome/ac7yrvzezfu5csfr2vj2txcbhivq_98.0.4758.102/GoogleChrome-98.0.4758.102.dmg",
     "mac": "http://dl.google.com/release2/chrome/ac7yrvzezfu5csfr2vj2txcbhivq_98.0.4758.102/GoogleChrome-98.0.4758.102.dmg",
