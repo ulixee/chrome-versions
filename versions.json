@@ -1,7 +1,10 @@
 {
   "99.0.4844.51": {
     "win32": "http://dl.google.com/release2/chrome/gqczgg3uhy46ftenjszsfj5hcy_99.0.4844.51/99.0.4844.51_chrome_installer.exe",
-    "win64": "http://dl.google.com/release2/chrome/adhm6j66jm36tzwpa6sldiyac6aq_99.0.4844.51/99.0.4844.51_chrome_installer.exe"
+    "win64": "http://dl.google.com/release2/chrome/adhm6j66jm36tzwpa6sldiyac6aq_99.0.4844.51/99.0.4844.51_chrome_installer.exe",
+    "mac": "http://dl.google.com/release2/chrome/g54h3jyf6l5s2kgdiusua4zdqu_99.0.4844.51/GoogleChrome-99.0.4844.51.dmg",
+    "linux": "http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_99.0.4844.51-1_amd64.deb",
+    "linux_rpm": "http://dl.google.com/linux/chrome/rpm/stable/x86_64/google-chrome-stable-99.0.4844.51-1.x86_64.rpm"
   },
   "98.0.4758.109": {
     "mac": "http://dl.google.com/release2/chrome/adqa3l7td7mi6md2dr47meoq5gaq_98.0.4758.109/GoogleChrome-98.0.4758.109.dmg",
