@@ -1,4 +1,8 @@
 {
+  "103.0.5060.66": {
+    "win32": "http://dl.google.com/release2/chrome/ccfjooliezwvnoibcqg2clqjl4_103.0.5060.66/103.0.5060.66_chrome_installer.exe",
+    "win64": "http://dl.google.com/release2/chrome/acskvtgddv23fo74thv6n75d7kvq_103.0.5060.66/103.0.5060.66_chrome_installer.exe"
+  },
   "103.0.5060.53": {
     "mac_arm64": "http://dl.google.com/release2/chrome/lskjwger7pasycjswyh4l2i3ym_103.0.5060.53/GoogleChrome-103.0.5060.53.dmg",
     "mac": "http://dl.google.com/release2/chrome/lskjwger7pasycjswyh4l2i3ym_103.0.5060.53/GoogleChrome-103.0.5060.53.dmg",
