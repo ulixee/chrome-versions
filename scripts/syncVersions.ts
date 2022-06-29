@@ -1,7 +1,6 @@
 import versions from '../versions.json';
 import GithubReleases from './GithubReleases';
 import { getAssetName } from './dirUtils';
-import { Handler } from 'secret-agent';
 import * as Mac from './mac';
 import * as Windows from './windows';
 import * as Debian from './debian';
@@ -10,18 +9,6 @@ import Versions from './Versions';
 const osesToSync = process.env.SYNC_OS_KEYS.split(',').map(x => x.trim());
 
 async function syncVersions() {
-  const handler = new Handler({ maxConcurrency: 1 });
-
-  if (process.env.UPDATE_VERSIONS === 'true' || process.env.UPDATE_VERSIONS === '1') {
-    if (osesToSync.includes('mac')) {
-      handler.dispatchAgent(Mac.updateVersions);
-    }
-    if (osesToSync.includes('win32')) {
-      handler.dispatchAgent(Windows.updateVersions);
-    }
-    await handler.waitForAllDispatches();
-  }
-
   const releases = new GithubReleases();
   const versionEntries = Object.entries(versions);
   // sort by version key descending
@@ -58,15 +45,14 @@ async function syncVersions() {
 
       if (osToSync === 'win32' || osToSync === 'win64') {
         await Windows.process(osToSync, version, releases);
-      } else if (osToSync === 'mac') {
-        handler.dispatchAgent(agent => Mac.process(agent, osToSync, version, releases));
+      } else if (osToSync === 'mac' || osToSync === 'mac_arm64') {
+        await Mac.process(osToSync, version, releases);
       } else if (osToSync === 'linux') {
         await Debian.process(osToSync, version, releases);
       }
     }
   }
 
-  await handler.waitForAllDispatches();
   process.exit();
 }
 

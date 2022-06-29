@@ -10,6 +10,7 @@ const fileExts = {
   win32: 'exe',
   win64: 'exe',
   mac: 'dmg',
+  mac_arm64: 'dmg',
   linux: 'deb',
 };
 

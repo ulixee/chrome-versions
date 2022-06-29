@@ -67,6 +67,7 @@ async function getChromeUpdateUrls(os: 'win' | 'mac', arch: 'x64' | 'x86' | 'arm
     }
   }
 
+  // if we have mac, we assume linux is here too
   if (osKey === 'mac') {
     Versions.set(version, {
       linux: `http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_${version}-1_amd64.deb`,

@@ -25,7 +25,7 @@ jobs:
       - name: Yarn Install
         run: yarn
         env:
-          SA_REPLAY_SKIP_BINARY_DOWNLOAD: false
+          SA_REPLAY_SKIP_BINARY_DOWNLOAD: true
           SA_SKIP_DOWNLOAD: false
           HERO_SKIP_CHROME_DOWNLOAD: false
 

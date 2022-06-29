@@ -10,19 +10,11 @@ export function updateVersions(agent: Agent) {
   return UpToDown.updateMacDownloadPages(agent);
 }
 
-export async function process(agent: Agent, os: string, version: string, releases: GithubReleases) {
+export async function process(os: string, version: string, releases: GithubReleases) {
   const assetPath = getAssetPath(os, version);
   const downloadPage = Versions.get(version)[os];
 
-  let downloadedPath: string;
-  if (downloadPage.includes('uptodown.com')) {
-    const downloadInfo = await UpToDown.getInstallerDownloadLink(agent, downloadPage);
-    // take SecretAgent off the download page
-    await agent.close();
-    downloadedPath = await downloadInstaller(downloadInfo.url, os, version, downloadInfo.headers);
-  } else {
-    downloadedPath = await downloadInstaller(downloadPage, os, version);
-  }
+  const downloadedPath = await downloadInstaller(downloadPage, os, version);
   await convertMacDmg(downloadedPath, assetPath, version);
 
   const release = await releases.get(version);

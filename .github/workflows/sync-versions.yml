@@ -78,5 +78,5 @@ jobs:
       - name: Synchronize Versions File
         run: node ./scripts/syncVersions.js
         env:
-          SYNC_OS_KEYS: mac
+          SYNC_OS_KEYS: mac,mac_arm64
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

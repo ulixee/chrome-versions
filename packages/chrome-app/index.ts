@@ -10,6 +10,7 @@ export default class ChromeApp {
   public static aptScriptPath = `/tmp/apt-install-chrome-dependencies.sh`;
 
   private static relativeChromeExecutablePathsByOs = {
+    mac_arm64: Path.join('Google Chrome.app', 'Contents', 'MacOS', 'Google Chrome'),
     mac: Path.join('Google Chrome.app', 'Contents', 'MacOS', 'Google Chrome'),
     linux: 'chrome',
     win32: 'chrome.exe',
@@ -19,6 +20,7 @@ export default class ChromeApp {
   public static cacheDirectoryByPlatform = {
     linux: process.env.XDG_CACHE_HOME || Path.join(Os.homedir(), '.cache'),
     mac: Path.join(Os.homedir(), 'Library', 'Caches'),
+    mac_arm64: Path.join(Os.homedir(), 'Library', 'Caches'),
     win32: windowsLocalAppData,
     win64: windowsLocalAppData,
   };
@@ -34,13 +36,13 @@ export default class ChromeApp {
   public get workingDir(): string {
     let cwd = this.browsersDir;
     // mac needs to be extracted directly into version directory
-    if (this.osPlatformName === 'mac') {
+    if (this.osPlatformName === 'mac' || this.osPlatformName === 'mac_arm64') {
       cwd = Path.join(cwd, this.fullVersion);
     }
     return cwd;
   }
 
-  public readonly osPlatformName: 'linux' | 'mac' | 'win32' | 'win64';
+  public readonly osPlatformName: 'linux' | 'mac' | 'mac_arm64' | 'win32' | 'win64';
   public readonly fullVersion: string;
   public readonly executablePath: string;
   public readonly executablePathEnvVar: string;
@@ -92,7 +94,12 @@ export default class ChromeApp {
 
   private static getOsPlatformName(): ChromeApp['osPlatformName'] {
     const osPlatformName = Os.platform();
-    if (osPlatformName === 'darwin') return 'mac';
+    if (osPlatformName === 'darwin') {
+      if (Os.arch() === 'arm64') {
+        return 'mac_arm64';
+      }
+      return 'mac';
+    }
     if (osPlatformName === 'linux') return 'linux';
     if (osPlatformName === 'win32') return Os.arch() === 'x64' ? 'win64' : 'win32';
   }
