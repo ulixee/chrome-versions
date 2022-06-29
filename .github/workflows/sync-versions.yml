@@ -23,10 +23,6 @@ jobs:
           SA_REPLAY_SKIP_BINARY_DOWNLOAD: true
           HERO_SKIP_CHROME_DOWNLOAD: false
 
-      - name: Install 7Zip
-        run: .\scripts\windows\install7Zip.ps1
-        shell: powershell
-
       - name: Synchronize Versions File
         run: node ./scripts/syncVersions.js
         env:
