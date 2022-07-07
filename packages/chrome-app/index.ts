@@ -6,6 +6,8 @@ import { installChrome } from './lib/installChrome';
 
 const windowsLocalAppData = process.env.LOCALAPPDATA || Path.join(Os.homedir(), 'AppData', 'Local');
 
+type IPlatformName = 'linux' | 'mac' | 'mac_arm64' | 'win32' | 'win64';
+
 export default class ChromeApp {
   public static aptScriptPath = `/tmp/apt-install-chrome-dependencies.sh`;
 
@@ -33,6 +35,10 @@ export default class ChromeApp {
     return process.env.BROWSERS_DIR ?? Path.join(this.cacheDir, 'ulixee', 'chrome');
   }
 
+  public get versionDir(): string {
+    return Path.join(this.browsersDir, this.fullVersion);
+  }
+
   public get workingDir(): string {
     let cwd = this.browsersDir;
     // mac needs to be extracted directly into version directory
@@ -42,10 +48,12 @@ export default class ChromeApp {
     return cwd;
   }
 
-  public readonly osPlatformName: 'linux' | 'mac' | 'mac_arm64' | 'win32' | 'win64';
+  public readonly osPlatformName: IPlatformName;
   public readonly fullVersion: string;
   public readonly executablePath: string;
   public readonly executablePathEnvVar: string;
+  // if the fullVersion was OS-specific, we need to symlink to the actual full version path
+  public readonly symlinkVersionDir?: string;
 
   public get isInstalled(): boolean {
     return FsSync.existsSync(this.executablePath);
@@ -63,6 +71,7 @@ export default class ChromeApp {
     options?: {
       executablePathEnvVar?: string;
       osPlatformName?: ChromeApp['osPlatformName'];
+      fullVersionOverridesByOs?: Partial<Record<IPlatformName, string>>;
     },
   ) {
     this.fullVersion = fullVersion;
@@ -70,13 +79,22 @@ export default class ChromeApp {
 
     if (!this.osPlatformName) throw new Error('This operating system is not supported');
 
+    let overriddenFullVersion: string;
+    if (options?.fullVersionOverridesByOs && options.fullVersionOverridesByOs[this.osPlatformName]) {
+      overriddenFullVersion = fullVersion;
+      this.fullVersion = options.fullVersionOverridesByOs[this.osPlatformName];
+    }
+
     const relativePath = ChromeApp.relativeChromeExecutablePathsByOs[this.osPlatformName];
 
     this.executablePathEnvVar =
       options?.executablePathEnvVar ?? `CHROME_${fullVersion.split('.').shift()}_BIN`;
 
     const envVar = process.env[this.executablePathEnvVar];
-    this.executablePath = envVar ?? Path.join(this.browsersDir, this.fullVersion, relativePath);
+    this.executablePath = envVar ?? Path.join(this.versionDir, relativePath);
+    if (overriddenFullVersion && !envVar) {
+      this.symlinkVersionDir = Path.join(this.browsersDir, overriddenFullVersion);
+    }
   }
 
   public async validateHostRequirements(): Promise<void> {
@@ -92,15 +110,16 @@ export default class ChromeApp {
     return this.osPlatformName === 'win32' || this.osPlatformName === 'win64';
   }
 
-  private static getOsPlatformName(): ChromeApp['osPlatformName'] {
+  public static getOsPlatformName(): ChromeApp['osPlatformName'] {
     const osPlatformName = Os.platform();
     if (osPlatformName === 'darwin') {
-      if (Os.arch() === 'arm64') {
-        return 'mac_arm64';
-      }
+      if (Os.arch() === 'arm64') return 'mac_arm64';
       return 'mac';
     }
     if (osPlatformName === 'linux') return 'linux';
-    if (osPlatformName === 'win32') return Os.arch() === 'x64' ? 'win64' : 'win32';
+    if (osPlatformName === 'win32') {
+      if (Os.arch() === 'x64') return 'win64';
+      return 'win32';
+    }
   }
 }

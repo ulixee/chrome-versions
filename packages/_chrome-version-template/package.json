@@ -1,6 +1,6 @@
 {
   "name": "@ulixee/chrome-version-template",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "fullVersion": "[fill-in full chrome version]",
   "private": true,
   "main": "index.js",
@@ -16,6 +16,6 @@
   ],
   "homepage": "https://ulixee.org",
   "dependencies": {
-    "@ulixee/chrome-app": "^1.0.2"
+    "@ulixee/chrome-app": "^1.0.3"
   }
 }

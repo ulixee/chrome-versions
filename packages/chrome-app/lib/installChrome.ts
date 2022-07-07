@@ -33,6 +33,9 @@ export async function installChrome(chromeApp: ChromeApp) {
     if (!existsSync(cwd)) Fs.mkdirSync(cwd, { recursive: true });
     await downloadFile(chromeApp.fullVersion, url, cwd);
     await Fs.promises.chmod(chromeApp.executablePath, 0o755);
+    if (chromeApp.symlinkVersionDir) {
+      await Fs.promises.symlink(chromeApp.versionDir, chromeApp.symlinkVersionDir, 'dir');
+    }
 
     // don't blow up during install process if host requirements can't be met
     await chromeApp.validateHostRequirements().catch(err => npmlog(err.toString()));

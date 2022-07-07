@@ -1,9 +1,13 @@
 import ChromeApp from '@ulixee/chrome-app';
-const { fullVersion } = require('./package.json');
+const { fullVersion, fullVersionOverridesByOs } = require('./package.json');
 
 class Chrome extends ChromeApp {
-  constructor(options?: { executablePathEnvVar?: string; osPlatformName?: ChromeApp['osPlatformName'] }) {
-    super(fullVersion, options);
+  constructor(options?: {
+    executablePathEnvVar?: string;
+    osPlatformName?: ChromeApp['osPlatformName'];
+  }) {
+    options ??= {};
+    super(fullVersion, { ...options, fullVersionOverridesByOs });
   }
 }
 

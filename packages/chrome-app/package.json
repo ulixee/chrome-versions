@@ -1,6 +1,6 @@
 {
   "name": "@ulixee/chrome-app",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Chrome App driver",
   "license": "MIT",
   "repository": "git@github.com:ulixee/chrome-versions.git",
