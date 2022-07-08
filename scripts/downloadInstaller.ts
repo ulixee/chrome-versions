@@ -21,6 +21,8 @@ export async function downloadInstaller(
     headers,
   });
 
+  if (response.status === 404) throw new Error('Not found');
+
   const file = Fs.createWriteStream(destinationPath);
   response.data.pipe(file);
   await new Promise((resolve, reject) => {

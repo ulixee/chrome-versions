@@ -54,6 +54,10 @@ jobs:
           SYNC_OS_KEYS: linux
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Sync Versions Cleanup
+
   mac:
     runs-on: macos-latest
 

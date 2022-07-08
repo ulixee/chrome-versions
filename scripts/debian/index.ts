@@ -15,6 +15,12 @@ export async function process(
   try {
     downloaded = await downloadInstaller(url, os, version);
   } catch (error) {
+    if (String(error) === 'Not found') {
+      Versions.set(version, {
+        linux: undefined,
+        linux_rpm: undefined,
+      });
+    }
     console.log('Could not download file at %s', url);
     return;
   }
