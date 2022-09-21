@@ -70,7 +70,6 @@ async function main() {
 
       console.log(name, version);
 
-      if (major !== '98') continue;
       try {
         const exists = execSync(`npm show ${name}@${version}`, { encoding: 'utf8' });
         if (exists) {
