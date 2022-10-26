@@ -1,4 +1,14 @@
 {
+  "107.0.5304.63": {
+    "win32": "http://dl.google.com/release2/chrome/ac6bfwnrfkampgoofdfvzb7hdovq_107.0.5304.63/107.0.5304.63_chrome_installer.exe",
+    "win64": "http://dl.google.com/release2/chrome/hkexna46iuewc3jdnqlayrl6di_107.0.5304.63/107.0.5304.63_chrome_installer.exe"
+  },
+  "107.0.5304.62": {
+    "mac_arm64": "http://dl.google.com/release2/chrome/kp6srqtew4ubiemfc2kvr35a4a_107.0.5304.62/GoogleChrome-107.0.5304.62.dmg",
+    "mac": "http://dl.google.com/release2/chrome/kp6srqtew4ubiemfc2kvr35a4a_107.0.5304.62/GoogleChrome-107.0.5304.62.dmg",
+    "linux": "http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_107.0.5304.62-1_amd64.deb",
+    "linux_rpm": "http://dl.google.com/linux/chrome/rpm/stable/x86_64/google-chrome-stable-107.0.5304.62-1.x86_64.rpm"
+  },
   "106.0.5249.119": {
     "mac_arm64": "http://dl.google.com/release2/chrome/bmfcilmrhsxvb4ntuz7xhhf6mi_106.0.5249.119/GoogleChrome-106.0.5249.119.dmg",
     "mac": "http://dl.google.com/release2/chrome/bmfcilmrhsxvb4ntuz7xhhf6mi_106.0.5249.119/GoogleChrome-106.0.5249.119.dmg",
