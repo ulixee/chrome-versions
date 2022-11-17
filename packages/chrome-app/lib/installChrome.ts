@@ -73,7 +73,7 @@ function downloadFile(fullVersion: string, url: string, cwd: string): Promise<vo
         .on('finish', resolve);
 
       const totalBytes = parseInt(response.headers['content-length'], 10);
-      const mb = totalBytes / 1024 / 1024;
+      const mb = totalBytes / 1e3 / 1e3;
       const mbString = `${Math.round(mb * 10) / 10} Mb`;
 
       const progressBar = new ProgressBar(
