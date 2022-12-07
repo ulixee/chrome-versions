@@ -5,8 +5,11 @@ on:
   - workflow_dispatch
 
 jobs:
+
   windows:
     runs-on: windows-latest
+    strategy:
+      max-parallel: 1
 
     steps:
       - name: Check out Git repository
@@ -19,9 +22,6 @@ jobs:
 
       - name: Yarn Install
         run: yarn
-        env:
-          SA_REPLAY_SKIP_BINARY_DOWNLOAD: true
-          HERO_SKIP_CHROME_DOWNLOAD: false
 
       - name: Synchronize Versions File
         run: node ./scripts/syncVersions.js
@@ -31,6 +31,8 @@ jobs:
           SA_SHOW_REPLAY: false
   ubuntu:
     runs-on: ubuntu-latest
+    strategy:
+      max-parallel: 1
 
     steps:
       - name: Check out Git repository
@@ -43,10 +45,6 @@ jobs:
 
       - name: Yarn Install
         run: yarn
-        env:
-          SA_REPLAY_SKIP_BINARY_DOWNLOAD: true
-          SA_SKIP_CHROME_DOWNLOAD: true
-          HERO_SKIP_CHROME_DOWNLOAD: true
 
       - name: Synchronize Versions File
         run: node ./scripts/syncVersions.js
@@ -56,10 +54,13 @@ jobs:
 
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
+          branch: main
           commit_message: Sync Versions Cleanup
 
   mac:
     runs-on: macos-latest
+    strategy:
+      max-parallel: 1
 
     steps:
       - name: Check out Git repository
@@ -72,10 +73,6 @@ jobs:
 
       - name: Yarn Install
         run: yarn
-        env:
-          SA_REPLAY_SKIP_BINARY_DOWNLOAD: true
-          SA_SKIP_CHROME_DOWNLOAD: true
-          HERO_SKIP_CHROME_DOWNLOAD: true
 
       - name: Synchronize Versions File
         run: node ./scripts/syncVersions.js

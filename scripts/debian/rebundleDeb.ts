@@ -54,8 +54,8 @@ export default async function rebundleDeb(
   Fs.writeFileSync(`${controlDir}/DEBIAN/control`, control, 'utf8');
 
   console.log(
-    'dpkg -b',
-    execSync(`dpkg -b "${controlDir}" "${tmpDir}/opt/google/chrome/install-dependencies.deb"`, {
+    'dpkg-deb -Zxz',
+    execSync(`dpkg-deb -Zxz --build "${controlDir}" "${tmpDir}/opt/google/chrome/install-dependencies.deb"`, {
       encoding: 'utf8',
     }),
   );

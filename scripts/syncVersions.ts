@@ -4,7 +4,6 @@ import { getAssetName } from './dirUtils';
 import * as Mac from './mac';
 import * as Windows from './windows';
 import * as Debian from './debian';
-import Versions from './Versions';
 
 const osesToSync = process.env.SYNC_OS_KEYS.split(',').map(x => x.trim());
 
@@ -28,12 +27,12 @@ async function syncVersions() {
       if (existingAsset) {
         continue;
       }
-      console.log(`Asset needed for Chrome %s on %s`, version, osToSync);
-
       const url = urls[osToSync];
       if (!url) {
         continue;
       }
+
+      console.log(`Asset needed for Chrome %s on %s`, version, osToSync);
 
       if (osToSync === 'win32' || osToSync === 'win64') {
         await Windows.process(osToSync, version, releases);
