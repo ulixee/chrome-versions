@@ -54,7 +54,6 @@ jobs:
 
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          branch: main
           commit_message: Sync Versions Cleanup
 
   mac:
