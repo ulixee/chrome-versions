@@ -6,7 +6,7 @@ import Versions from './Versions';
 const parser = new xml2js.Parser({ explicitArray: false, async: true });
 
 const versionsByOs = {
-  win: '6.3',
+  win: '10.0',
   mac: '80.0.2490.86',
 };
 const appidByOs = {
