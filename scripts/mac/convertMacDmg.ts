@@ -16,6 +16,7 @@ export default async function convertMacDmg(
   downloadedDmg: string,
   extractToPath: string,
   chromeVersion: string,
+  needsSignature: boolean,
 ): Promise<void> {
   const tmp = mkTempDir();
 
@@ -32,6 +33,15 @@ export default async function convertMacDmg(
 
   plist.KSUpdateURL = 'https://localhost/service/update2';
   Fs.writeFileSync(plistPath, Plist.build(plist), 'utf8');
+
+  if (needsSignature) {
+    execSync(`xattr -dr com.apple.FinderInfo "${tmp}/Google Chrome.app"`)
+    execSync(`xattr -lr "${tmp}/Google Chrome.app"`, { stdio: 'inherit' });
+    execSync(
+      `codesign --force --deep --sign "Developer ID Application: Data Liberation Foundation INC (DY8K483XWV)" "${tmp}/Google Chrome.app" -v`,
+      { stdio: 'inherit' },
+    );
+  }
 
   await createTarGz(extractToPath, `${tmp}`, ['Google Chrome.app']);
   console.log(`${chromeVersion} for mac converted`);
