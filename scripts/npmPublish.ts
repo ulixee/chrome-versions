@@ -4,6 +4,7 @@ import { execSync } from 'child_process';
 import versions from '../versions.json';
 import TemplatePackageJson from '../packages/_chrome-version-template/package.json';
 import PublishedJson from '../npm-published-packages.json';
+import Axios from 'axios';
 
 const latestPackageVersion = TemplatePackageJson.version.split('.').pop();
 
@@ -81,6 +82,30 @@ async function main() {
         if (!String(err).includes(`npm ERR! code E404`)) {
           throw err;
         }
+      }
+
+      try {
+        // make sure all assets exist before publishing
+        let hasAllVersions = true;
+        for (const [os, version] of Object.entries(lastVersionByOs)) {
+          if (os === 'linux_rpm') continue;
+          const downloadFilename = `chrome_${version}_${os}.tar.gz`;
+          const url = `https://github.com/ulixee/chrome-versions/releases/download/${version}/${downloadFilename}`;
+          const response = await Axios.head(url).catch(err => err.response);
+          if (response.status !== 200) {
+            console.warn('Chrome Asset not available on github', {
+              downloadFilename,
+              fullVersion,
+              response: { status: response.status, headers: response.headers },
+            });
+            hasAllVersions = false;
+            break;
+          }
+        }
+        if (!hasAllVersions) continue;
+      } catch (err) {
+        console.error('ERROR checking for release assets %s', fullVersion, err)
+        continue;
       }
 
       execSync('npm publish --access=public', {
