@@ -5,9 +5,7 @@
   },
   "112.0.5615.137": {
     "mac_arm64": "http://dl.google.com/release2/chrome/achi4ynqojgozqry2agncbuh74oq_112.0.5615.137/GoogleChrome-112.0.5615.137.dmg",
-    "mac": "http://dl.google.com/release2/chrome/achi4ynqojgozqry2agncbuh74oq_112.0.5615.137/GoogleChrome-112.0.5615.137.dmg",
-    "linux": "http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_112.0.5615.137-1_amd64.deb",
-    "linux_rpm": "http://dl.google.com/linux/chrome/rpm/stable/x86_64/google-chrome-stable-112.0.5615.137-1.x86_64.rpm"
+    "mac": "http://dl.google.com/release2/chrome/achi4ynqojgozqry2agncbuh74oq_112.0.5615.137/GoogleChrome-112.0.5615.137.dmg"
   },
   "112.0.5615.121": {
     "mac_arm64": "http://dl.google.com/release2/chrome/fgk7nqcqycwan5fjhmwjwup7mi_112.0.5615.121/GoogleChrome-112.0.5615.121.dmg",
