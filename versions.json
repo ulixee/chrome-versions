@@ -1,4 +1,8 @@
 {
+  "114.0.5735.110": {
+    "win32": "http://dl.google.com/release2/chrome/j44k5imxvqnsrgyydy5stfzm7y_114.0.5735.110/114.0.5735.110_chrome_installer.exe",
+    "win64": "http://dl.google.com/release2/chrome/acv6l7uqv5vm3zjnrialpp3qy3qq_114.0.5735.110/114.0.5735.110_chrome_installer.exe"
+  },
   "114.0.5735.91": {
     "win32": "http://dl.google.com/release2/chrome/adrui2fy4lvey2scd3qngzhj4kqa_114.0.5735.91/114.0.5735.91_chrome_installer.exe",
     "win64": "http://dl.google.com/release2/chrome/ackrdjaxyfituopzhu56unhz6weq_114.0.5735.91/114.0.5735.91_chrome_installer.exe"
