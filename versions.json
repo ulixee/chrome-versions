@@ -1,4 +1,14 @@
 {
+  "115.0.5790.171": {
+    "win32": "http://dl.google.com/release2/chrome/buvtuteab4jgud3mbw5vda2t6u_115.0.5790.171/115.0.5790.171_chrome_installer.exe",
+    "win64": "http://dl.google.com/release2/chrome/ma5ldr6fahw7lv2y2h4yf6xeem_115.0.5790.171/115.0.5790.171_chrome_installer.exe"
+  },
+  "115.0.5790.170": {
+    "mac_arm64": "http://dl.google.com/release2/chrome/cognov4j3gxmg7ip7dhnphe6jy_115.0.5790.170/GoogleChrome-115.0.5790.170.dmg",
+    "mac": "http://dl.google.com/release2/chrome/cognov4j3gxmg7ip7dhnphe6jy_115.0.5790.170/GoogleChrome-115.0.5790.170.dmg",
+    "linux": "http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_115.0.5790.170-1_amd64.deb",
+    "linux_rpm": "http://dl.google.com/linux/chrome/rpm/stable/x86_64/google-chrome-stable-115.0.5790.170-1.x86_64.rpm"
+  },
   "115.0.5790.114": {
     "mac_arm64": "http://dl.google.com/release2/chrome/ctvkv57t5gdx762cof6kigtxp4_115.0.5790.114/GoogleChrome-115.0.5790.114.dmg",
     "mac": "http://dl.google.com/release2/chrome/ctvkv57t5gdx762cof6kigtxp4_115.0.5790.114/GoogleChrome-115.0.5790.114.dmg",
