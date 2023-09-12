@@ -1,4 +1,14 @@
 {
+  "116.0.5845.188": {
+    "win32": "http://dl.google.com/release2/chrome/acrugjhtj4mgpswrad27h4enjffq_116.0.5845.188/116.0.5845.188_chrome_installer.exe",
+    "win64": "http://dl.google.com/release2/chrome/koeygqu6rp4k7sccv4bc2jmria_116.0.5845.188/116.0.5845.188_chrome_installer.exe"
+  },
+  "116.0.5845.187": {
+    "mac_arm64": "http://dl.google.com/release2/chrome/acmm55cy3sg73rcub4rfcdfjjmza_116.0.5845.187/GoogleChrome-116.0.5845.187.dmg",
+    "mac": "http://dl.google.com/release2/chrome/acmm55cy3sg73rcub4rfcdfjjmza_116.0.5845.187/GoogleChrome-116.0.5845.187.dmg",
+    "linux": "http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_116.0.5845.187-1_amd64.deb",
+    "linux_rpm": "http://dl.google.com/linux/chrome/rpm/stable/x86_64/google-chrome-stable-116.0.5845.187-1.x86_64.rpm"
+  },
   "116.0.5845.180": {
     "win32": "http://dl.google.com/release2/chrome/acgiqgqfqxylyx64jo22y3dc6aca_116.0.5845.180/116.0.5845.180_chrome_installer.exe",
     "win64": "http://dl.google.com/release2/chrome/ad5oy7m4oarjmlnuxvhskgjj6qkq_116.0.5845.180/116.0.5845.180_chrome_installer.exe"
