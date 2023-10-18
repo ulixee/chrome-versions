@@ -796,6 +796,8 @@
     ]
   },
   "@ulixee/chrome-118-0": {
-    "versions": []
+    "versions": [
+      "5993.70.8"
+    ]
   }
 }
