@@ -32,7 +32,7 @@ jobs:
           SA_SHOW_REPLAY: false
   mac:
     runs-on: macos-latest
-    needs: ubuntu
+    needs: windows
 
     steps:
       - name: Check out Git repository
