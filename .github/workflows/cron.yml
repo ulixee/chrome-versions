@@ -4,7 +4,9 @@ on:
   schedule:
     # Run at 10am daily
     - cron: '0 10 * * *'
-  push:
+
+concurrency:
+  group: ${{ github.ref }}
 
 jobs:
   cron:

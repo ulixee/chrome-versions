@@ -4,12 +4,13 @@ on:
   - push
   - workflow_dispatch
 
+concurrency:
+  group: ${{ github.ref }}
+
 jobs:
 
   windows:
     runs-on: windows-latest
-    strategy:
-      max-parallel: 1
 
     steps:
       - name: Check out Git repository
@@ -31,12 +32,13 @@ jobs:
           SA_SHOW_REPLAY: false
   ubuntu:
     runs-on: ubuntu-latest
-    strategy:
-      max-parallel: 1
+    needs: windows
 
     steps:
       - name: Check out Git repository
         uses: actions/checkout@v4
+        with:
+          ref: main
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -54,12 +56,12 @@ jobs:
 
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
+          branch: main
           commit_message: Sync Versions Cleanup
 
   mac:
     runs-on: macos-latest
-    strategy:
-      max-parallel: 1
+    needs: ubuntu
 
     steps:
       - name: Check out Git repository
