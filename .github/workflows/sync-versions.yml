@@ -30,35 +30,6 @@ jobs:
           SYNC_OS_KEYS: win32,win64
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SA_SHOW_REPLAY: false
-  ubuntu:
-    runs-on: ubuntu-latest
-    needs: windows
-
-    steps:
-      - name: Check out Git repository
-        uses: actions/checkout@v4
-        with:
-          ref: main
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-
-      - name: Yarn Install
-        run: yarn
-
-      - name: Synchronize Versions File
-        run: node ./scripts/syncVersions.js
-        env:
-          SYNC_OS_KEYS: linux
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          branch: main
-          commit_message: Sync Versions Cleanup
-
   mac:
     runs-on: macos-latest
     needs: ubuntu
@@ -92,3 +63,39 @@ jobs:
         env:
           SYNC_OS_KEYS: mac,mac_arm64
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  ubuntu:
+    runs-on: ubuntu-latest
+    needs: [windows,mac]
+
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          registry-url: 'https://registry.npmjs.org/'
+
+      - name: Yarn Install
+        run: yarn
+
+      - name: Synchronize Versions File
+        run: node ./scripts/syncVersions.js
+        env:
+          SYNC_OS_KEYS: linux
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Check for Npm publish
+        run: node ./scripts/npmPublish.js
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          scope: '@ulixee'
+
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          branch: main
+          commit_message: Sync Versions Cleanup
