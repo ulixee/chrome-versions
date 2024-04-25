@@ -1,7 +1,9 @@
 {
   "124.0.6367.80": {
     "mac_arm64": "http://dl.google.com/release2/chrome/a7qas2456bj6ny4vf3cv3gbbjq_124.0.6367.80/GoogleChrome-124.0.6367.80.dmg",
-    "mac": "http://dl.google.com/release2/chrome/a7qas2456bj6ny4vf3cv3gbbjq_124.0.6367.80/GoogleChrome-124.0.6367.80.dmg"
+    "mac": "http://dl.google.com/release2/chrome/a7qas2456bj6ny4vf3cv3gbbjq_124.0.6367.80/GoogleChrome-124.0.6367.80.dmg",
+    "linux": "http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_124.0.6367.80-1_amd64.deb",
+    "linux_rpm": "http://dl.google.com/linux/chrome/rpm/stable/x86_64/google-chrome-stable-124.0.6367.80-1.x86_64.rpm"
   },
   "124.0.6367.79": {
     "win32": "http://dl.google.com/release2/chrome/ad3tyd4l3p7f5o7ipe5abwjnob7a_124.0.6367.79/124.0.6367.79_chrome_installer.exe",
