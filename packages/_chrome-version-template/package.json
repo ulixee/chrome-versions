@@ -1,6 +1,6 @@
 {
   "name": "@ulixee/chrome-version-template",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "fullVersion": "[fill-in full chrome version]",
   "private": true,
   "main": "index.js",
@@ -13,6 +13,12 @@
   "contributors": [
     "Caleb Clark",
     "Blake Byrnes"
+  ],
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "index.d.ts.map",
+    "index.js"
   ],
   "homepage": "https://ulixee.org",
   "dependencies": {

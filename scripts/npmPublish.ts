@@ -70,9 +70,12 @@ async function main() {
       Fs.copyFileSync(`${srcDir}/index.d.ts`, `${outDir}/index.d.ts`);
       Fs.copyFileSync(`${srcDir}/index.d.ts.map`, `${outDir}/index.d.ts.map`);
       Fs.copyFileSync(`${srcDir}/install.js`, `${outDir}/install.js`);
+      Fs.copyFileSync(`${srcDir}/.npmignore`, `${outDir}/.npmignore`);
       Fs.writeFileSync(`${outDir}/package.json`, JSON.stringify(newPackage, null, 2));
 
       console.log(name, version);
+      console.log("out dir", execSync('ls -la', { cwd: outDir }).toString());
+      console.log("src dir", execSync('ls -la', { cwd: outDir }).toString());
 
       try {
         const exists = execSync(`npm show ${name}@${version}`, { encoding: 'utf8' });
@@ -111,7 +114,7 @@ async function main() {
         continue;
       }
 
-      execSync('npm publish --access=public', {
+      execSync('npm publish --access=public --dry-run', {
         cwd: outDir,
       });
 
