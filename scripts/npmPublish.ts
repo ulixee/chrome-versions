@@ -10,6 +10,8 @@ const latestPackageVersion = TemplatePackageJson.version.split('.').pop();
 
 type IPlatform = typeof ChromeApp.prototype.osPlatformName;
 
+const MIN_MAJOR_VERSION_FOR_9 = 122;
+
 async function main() {
   const versionMap: {
     [majorVersion: string]: [minor: number, patch: number, platforms: IPlatform[]][];
@@ -42,6 +44,7 @@ async function main() {
 
       PublishedJson[name] ??= { versions: [] };
       if (PublishedJson[name].versions.includes(version)) continue;
+      if (latestPackageVersion === '9' && parseInt(major, 10) < MIN_MAJOR_VERSION_FOR_9) continue;
 
       // publish
       const newPackage: any = { ...TemplatePackageJson };
@@ -104,7 +107,7 @@ async function main() {
         }
         if (!hasAllVersions) continue;
       } catch (err) {
-        console.error('ERROR checking for release assets %s', fullVersion, err)
+        console.error('ERROR checking for release assets %s', fullVersion, err);
         continue;
       }
 

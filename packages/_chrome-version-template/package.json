@@ -1,6 +1,6 @@
 {
   "name": "@ulixee/chrome-version-template",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "fullVersion": "[fill-in full chrome version]",
   "private": true,
   "main": "index.js",
