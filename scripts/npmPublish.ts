@@ -10,7 +10,7 @@ const latestPackageVersion = TemplatePackageJson.version.split('.').pop();
 
 type IPlatform = typeof ChromeApp.prototype.osPlatformName;
 
-const MIN_MAJOR_VERSION_FOR_9 = 122;
+const MIN_MAJOR_VERSION_TO_UPDATE = 122;
 
 async function main() {
   const versionMap: {
@@ -33,6 +33,7 @@ async function main() {
   for (const [major, versions] of Object.entries(versionMap)) {
     const lastVersionByOs: Partial<Record<IPlatform, string>> = {};
     for (const [minor, patch, oses] of versions) {
+      if (parseInt(major, 10) < MIN_MAJOR_VERSION_TO_UPDATE) continue;
       // we use Chrome's version
       const version = `${minor}.${patch}.${latestPackageVersion}`;
       const name = `@ulixee/chrome-${major}-0`;
@@ -44,7 +45,6 @@ async function main() {
 
       PublishedJson[name] ??= { versions: [] };
       if (PublishedJson[name].versions.includes(version)) continue;
-      if (latestPackageVersion === '9' && parseInt(major, 10) < MIN_MAJOR_VERSION_FOR_9) continue;
 
       // publish
       const newPackage: any = { ...TemplatePackageJson };
