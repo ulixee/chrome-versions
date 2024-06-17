@@ -12,8 +12,6 @@
   "126.0.6478.57": {
     "mac_arm64": "http://dl.google.com/release2/chrome/mf5dfk5mlvufmcxxfq4waorfd4_126.0.6478.57/GoogleChrome-126.0.6478.57.dmg",
     "mac": "http://dl.google.com/release2/chrome/mf5dfk5mlvufmcxxfq4waorfd4_126.0.6478.57/GoogleChrome-126.0.6478.57.dmg",
-    "linux": "http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_126.0.6478.57-1_amd64.deb",
-    "linux_rpm": "http://dl.google.com/linux/chrome/rpm/stable/x86_64/google-chrome-stable-126.0.6478.57-1.x86_64.rpm",
     "win32": "http://dl.google.com/release2/chrome/adoxidy6pbhbsepqqrqit66zpjba_126.0.6478.57/126.0.6478.57_chrome_installer.exe",
     "win64": "http://dl.google.com/release2/chrome/omx7fti2g3qgnca7rr63hx26_126.0.6478.57/126.0.6478.57_chrome_installer.exe"
   },
