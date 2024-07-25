@@ -66,9 +66,15 @@ async function getChromeUpdateUrls(os: 'win' | 'mac', arch: 'x64' | 'x86' | 'arm
       });
     }
   }
+}
 
-  // if we have mac, we assume linux is here too
-  if (osKey === 'mac') {
+async function getChromeUpdateUrlsLinux() {
+  const request = await Axios.get('https://chromiumdash.appspot.com/fetch_releases?channel=stable&platform=linux&num=10&offset=0', {
+    responseType: 'json',
+  });
+  const versions = request.data;
+  for (const entry of versions) {
+    const version = entry.version;
     Versions.set(version, {
       linux: `http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_${version}-1_amd64.deb`,
       linux_rpm: `http://dl.google.com/linux/chrome/rpm/stable/x86_64/google-chrome-stable-${version}-1.x86_64.rpm`,
@@ -81,4 +87,5 @@ async function getChromeUpdateUrls(os: 'win' | 'mac', arch: 'x64' | 'x86' | 'arm
   await getChromeUpdateUrls('mac', 'x64');
   await getChromeUpdateUrls('win', 'x86');
   await getChromeUpdateUrls('win', 'x64');
+  await getChromeUpdateUrlsLinux();
 })();

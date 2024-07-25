@@ -5,11 +5,19 @@
     "win32": "http://dl.google.com/release2/chrome/ac24ah7k2ect4cib5ns2ce3ir5gq_127.0.6533.73/127.0.6533.73_chrome_installer.exe",
     "win64": "http://dl.google.com/release2/chrome/adcainarvsrw2nxkdwnkvjzb6jjq_127.0.6533.73/127.0.6533.73_chrome_installer.exe"
   },
+  "127.0.6533.72": {
+    "linux": "http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_127.0.6533.72-1_amd64.deb",
+    "linux_rpm": "http://dl.google.com/linux/chrome/rpm/stable/x86_64/google-chrome-stable-127.0.6533.72-1.x86_64.rpm"
+  },
   "126.0.6478.183": {
     "mac_arm64": "http://dl.google.com/release2/chrome/c27alpqp6yqlnckxwaxrg35r2y_126.0.6478.183/GoogleChrome-126.0.6478.183.dmg",
     "mac": "http://dl.google.com/release2/chrome/c27alpqp6yqlnckxwaxrg35r2y_126.0.6478.183/GoogleChrome-126.0.6478.183.dmg",
     "win32": "http://dl.google.com/release2/chrome/f47on6ncmxx6huvado2vskgsuu_126.0.6478.183/126.0.6478.183_chrome_installer.exe",
     "win64": "http://dl.google.com/release2/chrome/bubre2awpy35e3vbrrkljihl5i_126.0.6478.183/126.0.6478.183_chrome_installer.exe"
+  },
+  "126.0.6478.182": {
+    "linux": "http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_126.0.6478.182-1_amd64.deb",
+    "linux_rpm": "http://dl.google.com/linux/chrome/rpm/stable/x86_64/google-chrome-stable-126.0.6478.182-1.x86_64.rpm"
   },
   "126.0.6478.127": {
     "mac_arm64": "http://dl.google.com/release2/chrome/o3uxrtw4uzwxtwdkjvakvopndq_126.0.6478.127/GoogleChrome-126.0.6478.127.dmg",
@@ -17,11 +25,19 @@
     "win32": "http://dl.google.com/release2/chrome/hlannckzzfju63p3z34onymzai_126.0.6478.127/126.0.6478.127_chrome_installer.exe",
     "win64": "http://dl.google.com/release2/chrome/lje4dnl5yxiu3hacl3zvtatwey_126.0.6478.127/126.0.6478.127_chrome_installer.exe"
   },
+  "126.0.6478.126": {
+    "linux": "http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_126.0.6478.126-1_amd64.deb",
+    "linux_rpm": "http://dl.google.com/linux/chrome/rpm/stable/x86_64/google-chrome-stable-126.0.6478.126-1.x86_64.rpm"
+  },
   "126.0.6478.115": {
     "win32": "http://dl.google.com/release2/chrome/accapv4wrotmklsxto6pisikuy4a_126.0.6478.115/126.0.6478.115_chrome_installer.exe",
     "win64": "http://dl.google.com/release2/chrome/klormjfrm2fljuqimfevwvhe6q_126.0.6478.115/126.0.6478.115_chrome_installer.exe",
     "mac_arm64": "http://dl.google.com/release2/chrome/c3dc3d64n6qfyiz3dkvfv6k7ra_126.0.6478.115/GoogleChrome-126.0.6478.115.dmg",
     "mac": "http://dl.google.com/release2/chrome/c3dc3d64n6qfyiz3dkvfv6k7ra_126.0.6478.115/GoogleChrome-126.0.6478.115.dmg"
+  },
+  "126.0.6478.114": {
+    "linux": "http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_126.0.6478.114-1_amd64.deb",
+    "linux_rpm": "http://dl.google.com/linux/chrome/rpm/stable/x86_64/google-chrome-stable-126.0.6478.114-1.x86_64.rpm"
   },
   "126.0.6478.62": {
     "mac_arm64": "http://dl.google.com/release2/chrome/ads7epv7xqfmhko3j5lnrqjv2izq_126.0.6478.62/GoogleChrome-126.0.6478.62.dmg",
@@ -39,6 +55,10 @@
     "win32": "http://dl.google.com/release2/chrome/adoxidy6pbhbsepqqrqit66zpjba_126.0.6478.57/126.0.6478.57_chrome_installer.exe",
     "win64": "http://dl.google.com/release2/chrome/omx7fti2g3qgnca7rr63hx26_126.0.6478.57/126.0.6478.57_chrome_installer.exe"
   },
+  "126.0.6478.55": {
+    "linux": "http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_126.0.6478.55-1_amd64.deb",
+    "linux_rpm": "http://dl.google.com/linux/chrome/rpm/stable/x86_64/google-chrome-stable-126.0.6478.55-1.x86_64.rpm"
+  },
   "125.0.6422.142": {
     "mac_arm64": "http://dl.google.com/release2/chrome/i5incd454szmu3rscl5w6r5qga_125.0.6422.142/GoogleChrome-125.0.6422.142.dmg",
     "mac": "http://dl.google.com/release2/chrome/i5incd454szmu3rscl5w6r5qga_125.0.6422.142/GoogleChrome-125.0.6422.142.dmg",
@@ -55,17 +75,29 @@
     "win32": "http://dl.google.com/release2/chrome/adiy4u3ka3ewxorc2b3voq5kvjoa_125.0.6422.113/125.0.6422.113_chrome_installer.exe",
     "win64": "http://dl.google.com/release2/chrome/cfm2cke6wctzfpvqgo347p5klu_125.0.6422.113/125.0.6422.113_chrome_installer.exe"
   },
+  "125.0.6422.112": {
+    "linux": "http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_125.0.6422.112-1_amd64.deb",
+    "linux_rpm": "http://dl.google.com/linux/chrome/rpm/stable/x86_64/google-chrome-stable-125.0.6422.112-1.x86_64.rpm"
+  },
   "125.0.6422.77": {
     "mac_arm64": "http://dl.google.com/release2/chrome/dhzwypji7q5lfjs5oernsfarb4_125.0.6422.77/GoogleChrome-125.0.6422.77.dmg",
     "mac": "http://dl.google.com/release2/chrome/dhzwypji7q5lfjs5oernsfarb4_125.0.6422.77/GoogleChrome-125.0.6422.77.dmg",
     "win32": "http://dl.google.com/release2/chrome/adashej2etnqpgjeaeojodnbkf6a_125.0.6422.77/125.0.6422.77_chrome_installer.exe",
     "win64": "http://dl.google.com/release2/chrome/ac7s26qlycen6fyvgk5kffgapzla_125.0.6422.77/125.0.6422.77_chrome_installer.exe"
   },
+  "125.0.6422.76": {
+    "linux": "http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_125.0.6422.76-1_amd64.deb",
+    "linux_rpm": "http://dl.google.com/linux/chrome/rpm/stable/x86_64/google-chrome-stable-125.0.6422.76-1.x86_64.rpm"
+  },
   "125.0.6422.61": {
     "mac_arm64": "http://dl.google.com/release2/chrome/ddlg2oiegbp3ascytfs5tnjpta_125.0.6422.61/GoogleChrome-125.0.6422.61.dmg",
     "mac": "http://dl.google.com/release2/chrome/ddlg2oiegbp3ascytfs5tnjpta_125.0.6422.61/GoogleChrome-125.0.6422.61.dmg",
     "win32": "http://dl.google.com/release2/chrome/h2iyc65go37jl2gkibtziqgep4_125.0.6422.61/125.0.6422.61_chrome_installer.exe",
     "win64": "http://dl.google.com/release2/chrome/acgeoucdi4yjn3qutvqsm727ugta_125.0.6422.61/125.0.6422.61_chrome_installer.exe"
+  },
+  "125.0.6422.60": {
+    "linux": "http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_125.0.6422.60-1_amd64.deb",
+    "linux_rpm": "http://dl.google.com/linux/chrome/rpm/stable/x86_64/google-chrome-stable-125.0.6422.60-1.x86_64.rpm"
   },
   "124.0.6367.208": {
     "mac_arm64": "http://dl.google.com/release2/chrome/pyibrq4fvbzbiecijliwb7oyxa_124.0.6367.208/GoogleChrome-124.0.6367.208.dmg",
