@@ -1,4 +1,14 @@
 {
+  "127.0.6533.89": {
+    "mac_arm64": "http://dl.google.com/release2/chrome/aclo5k72baz7erlbweyjruguwh2a_127.0.6533.89/GoogleChrome-127.0.6533.89.dmg",
+    "mac": "http://dl.google.com/release2/chrome/aclo5k72baz7erlbweyjruguwh2a_127.0.6533.89/GoogleChrome-127.0.6533.89.dmg",
+    "win32": "http://dl.google.com/release2/chrome/oct5rowwm5fvvxipazq2wlma2u_127.0.6533.89/127.0.6533.89_chrome_installer.exe",
+    "win64": "http://dl.google.com/release2/chrome/acljsqmj242ipgr5z4ha6ymv5ita_127.0.6533.89/127.0.6533.89_chrome_installer.exe"
+  },
+  "127.0.6533.88": {
+    "linux": "http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_127.0.6533.88-1_amd64.deb",
+    "linux_rpm": "http://dl.google.com/linux/chrome/rpm/stable/x86_64/google-chrome-stable-127.0.6533.88-1.x86_64.rpm"
+  },
   "127.0.6533.73": {
     "mac_arm64": "http://dl.google.com/release2/chrome/ac45hrtfyajlzxyuqx6hwpvy5bfq_127.0.6533.73/GoogleChrome-127.0.6533.73.dmg",
     "mac": "http://dl.google.com/release2/chrome/ac45hrtfyajlzxyuqx6hwpvy5bfq_127.0.6533.73/GoogleChrome-127.0.6533.73.dmg",
