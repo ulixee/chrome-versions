@@ -48,7 +48,7 @@ export default async function rebundleDeb(
   let control = Fs.readFileSync(`${controlDir}/DEBIAN/control`, 'utf8');
   control = control
     .replace('google-chrome-stable', `google-chrome-${chromeVersion.replace(/\./g, '-')}`)
-    .replace(/Maintainer: .+\n/, 'Maintainer: Data Liberation Foundation, Inc. <staff@dataliberationfoundation.org>')
+    .replace(/Maintainer: .+\n/, 'Maintainer: Ulixee Foundation, Inc. <staff@ulixee.org>')
     .replace(/Installed-Size: .+\n/, '');
 
   Fs.writeFileSync(`${controlDir}/DEBIAN/control`, control, 'utf8');
