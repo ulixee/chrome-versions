@@ -9,11 +9,7 @@
   "license": "MIT",
   "scripts": {},
   "repository": "git@github.com:ulixee/chrome-versions.git",
-  "author": "Data Liberation Foundation",
-  "contributors": [
-    "Caleb Clark",
-    "Blake Byrnes"
-  ],
+  "author": "Ulixee",
   "files": [
     "index.js",
     "index.d.ts",
