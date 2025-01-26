@@ -25,7 +25,7 @@ export async function downloadInstaller(
 
   const file = Fs.createWriteStream(destinationPath);
   response.data.pipe(file);
-  await new Promise((resolve, reject) => {
+  await new Promise<void>((resolve, reject) => {
     file.on('finish', resolve);
     file.on('error', reject);
   });
