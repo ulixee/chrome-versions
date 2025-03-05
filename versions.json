@@ -1,4 +1,16 @@
 {
+  "134.0.6998.45": {
+    "mac_arm64": "http://dl.google.com/release2/chrome/acywna3py5h6xead7weymurbrefq_134.0.6998.45/GoogleChrome-134.0.6998.45.dmg",
+    "mac": "http://dl.google.com/release2/chrome/acywna3py5h6xead7weymurbrefq_134.0.6998.45/GoogleChrome-134.0.6998.45.dmg"
+  },
+  "134.0.6998.36": {
+    "win32": "http://dl.google.com/release2/chrome/ach3vs3xobze3v5i4ihvkczc44lq_134.0.6998.36/134.0.6998.36_chrome_installer.exe",
+    "win64": "http://dl.google.com/release2/chrome/ac4war5y5pzz7nlnczezcmca3vma_134.0.6998.36/134.0.6998.36_chrome_installer.exe"
+  },
+  "134.0.6998.35": {
+    "linux": "http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_134.0.6998.35-1_amd64.deb",
+    "linux_rpm": "http://dl.google.com/linux/chrome/rpm/stable/x86_64/google-chrome-stable-134.0.6998.35-1.x86_64.rpm"
+  },
   "133.0.6943.142": {
     "mac_arm64": "http://dl.google.com/release2/chrome/ejubi5y7bpapjhrevtxffszuji_133.0.6943.142/GoogleChrome-133.0.6943.142.dmg",
     "mac": "http://dl.google.com/release2/chrome/ejubi5y7bpapjhrevtxffszuji_133.0.6943.142/GoogleChrome-133.0.6943.142.dmg",
