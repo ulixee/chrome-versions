@@ -1,4 +1,14 @@
 {
+  "135.0.7049.85": {
+    "mac_arm64": "http://dl.google.com/release2/chrome/adtorua7m5iaphuubpwxkpgb7qwa_135.0.7049.85/GoogleChrome-135.0.7049.85.dmg",
+    "mac": "http://dl.google.com/release2/chrome/adtorua7m5iaphuubpwxkpgb7qwa_135.0.7049.85/GoogleChrome-135.0.7049.85.dmg",
+    "win32": "http://dl.google.com/release2/chrome/ackovrtfzwm6r7pr2k5yv27rqgxa_135.0.7049.85/135.0.7049.85_chrome_installer.exe",
+    "win64": "http://dl.google.com/release2/chrome/em3tpu3hbjhddrksjr2iu2s2qe_135.0.7049.85/135.0.7049.85_chrome_installer.exe"
+  },
+  "135.0.7049.84": {
+    "linux": "http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_135.0.7049.84-1_amd64.deb",
+    "linux_rpm": "http://dl.google.com/linux/chrome/rpm/stable/x86_64/google-chrome-stable-135.0.7049.84-1.x86_64.rpm"
+  },
   "135.0.7049.52": {
     "linux": "http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_135.0.7049.52-1_amd64.deb",
     "linux_rpm": "http://dl.google.com/linux/chrome/rpm/stable/x86_64/google-chrome-stable-135.0.7049.52-1.x86_64.rpm"
