@@ -17,12 +17,19 @@ export default async function extractWindowsExe(
   // extract executable
   execSync(`7z.exe e -y "${downloadExecutable}" -o"${tmp}\\"`);
   console.log(`After extraction, files are`, Fs.readdirSync(tmp));
-  execSync(`7z.exe x -y "${tmp}\\chrome.7z" -o"${tmp}"`);
+  const versionDir = `${tmp}/Chrome-bin/${chromeVersion}`;
+  Fs.mkdirSync(versionDir, { recursive: true });
 
-  console.log('Unzipped Chrome installer %s', Fs.readdirSync(`${tmp}/Chrome-bin`));
+  if (Fs.existsSync(`${tmp}/chrome.7z`)) {
+    execSync(`7z.exe x -y "${tmp}\\chrome.7z" -o"${tmp}"`);
 
-  // move chrome.exe into "version folder"
-  Fs.renameSync(`${tmp}/Chrome-bin/chrome.exe`, `${tmp}/Chrome-bin/${chromeVersion}/chrome.exe`);
+    console.log('Unzipped Chrome installer %s', Fs.readdirSync(`${tmp}/Chrome-bin`));
+
+    // move chrome.exe into "version folder"
+    Fs.renameSync(`${tmp}/Chrome-bin/chrome.exe`, `${versionDir}/chrome.exe`);
+  } else {
+    Fs.renameSync(`${tmp}/chrome.exe`, `${versionDir}/chrome.exe`);
+  }
 
   await createTarGz(extractToPath, `${tmp}/Chrome-bin/`, [chromeVersion]);
   console.log('Finished extracting windows exe', extractToPath);
