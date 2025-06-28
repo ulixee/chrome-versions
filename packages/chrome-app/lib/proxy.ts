@@ -1,5 +1,5 @@
 import { parse, URL } from "url";
-import { RequestOptions } from "https";
+import { RequestOptions, Agent } from "https";
 import { HttpsProxyAgent } from 'https-proxy-agent';
 
 // logic from https://github.com/Rob--W/proxy-from-env
@@ -21,7 +21,7 @@ export function getRequestOptionsWithProxy(url: string): RequestOptions {
         port: proxyURL.port,
       };
     }
-    options.agent = new HttpsProxyAgent(proxyURL.href);
+    options.agent = new HttpsProxyAgent(proxyURL.href) as Agent;
     options.rejectUnauthorized = false;
   }
   return options;
