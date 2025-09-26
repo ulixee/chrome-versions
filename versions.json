@@ -1,4 +1,8 @@
 {
+  "140.0.7339.214": {
+    "mac_arm64": "http://dl.google.com/release2/chrome/mfmmq5vcqbb2jdp3e77lsymylu_140.0.7339.214/GoogleChrome-140.0.7339.214.dmg",
+    "mac": "http://dl.google.com/release2/chrome/mfmmq5vcqbb2jdp3e77lsymylu_140.0.7339.214/GoogleChrome-140.0.7339.214.dmg"
+  },
   "140.0.7339.208": {
     "mac_arm64": "http://dl.google.com/release2/chrome/acsw3boop64eo5zxqg6jdhi34c5q_140.0.7339.208/GoogleChrome-140.0.7339.208.dmg",
     "mac": "http://dl.google.com/release2/chrome/acsw3boop64eo5zxqg6jdhi34c5q_140.0.7339.208/GoogleChrome-140.0.7339.208.dmg",
