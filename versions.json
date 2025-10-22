@@ -1,4 +1,14 @@
 {
+  "141.0.7390.123": {
+    "mac_arm64": "http://dl.google.com/release2/chrome/adavkzngpjaayzmntr45fwn25nyq_141.0.7390.123/GoogleChrome-141.0.7390.123.dmg",
+    "mac": "http://dl.google.com/release2/chrome/adavkzngpjaayzmntr45fwn25nyq_141.0.7390.123/GoogleChrome-141.0.7390.123.dmg",
+    "win32": "http://dl.google.com/release2/chrome/acopmdg6vfozrcmx5634d4wvicra_141.0.7390.123/141.0.7390.123_chrome_installer_uncompressed.exe",
+    "win64": "http://dl.google.com/release2/chrome/adjsb3iilfaqd6frclcpo67wthmq_141.0.7390.123/141.0.7390.123_chrome_installer_uncompressed.exe"
+  },
+  "141.0.7390.122": {
+    "linux": "http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_141.0.7390.122-1_amd64.deb",
+    "linux_rpm": "http://dl.google.com/linux/chrome/rpm/stable/x86_64/google-chrome-stable-141.0.7390.122-1.x86_64.rpm"
+  },
   "141.0.7390.108": {
     "mac_arm64": "http://dl.google.com/release2/chrome/mevrk534jr6le7rbu7gatnuxym_141.0.7390.108/GoogleChrome-141.0.7390.108.dmg",
     "mac": "http://dl.google.com/release2/chrome/mevrk534jr6le7rbu7gatnuxym_141.0.7390.108/GoogleChrome-141.0.7390.108.dmg",
