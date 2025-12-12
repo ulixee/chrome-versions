@@ -11,14 +11,15 @@
   },
   "dependencies": {
     "@actions/github": "^4.0.0",
-    "axios": "^1.7.7",
+    "axios": "^1.12.0",
     "tar": "^7.4.3",
     "uuid": "^8.3.2",
-    "xml2js": "^0.4.23",
+    "xml2js": "^0.5.0",
     "plist": "^3.0.1"
   },
   "devDependencies": {
     "@types/tar": "^4.0.4",
+    "@types/node": "^20.19",
     "typescript": "^5.6.2",
     "@types/xml2js": "^0.4.8",
     "prettier": "^2.2.1"

@@ -4,7 +4,6 @@ downloads/*
 !assets/_keep
 .idea
 node_modules
-yarn.lock
 *.js
 *.d.ts
 *.d.ts.map
