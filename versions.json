@@ -1,4 +1,10 @@
 {
+  "144.0.7559.60": {
+    "mac_arm64": "http://dl.google.com/release2/chrome/aceqfoiuzjbxhz6xooajrcqohsoa_144.0.7559.60/GoogleChrome-144.0.7559.60.dmg",
+    "mac": "http://dl.google.com/release2/chrome/aceqfoiuzjbxhz6xooajrcqohsoa_144.0.7559.60/GoogleChrome-144.0.7559.60.dmg",
+    "win32": "http://dl.google.com/release2/chrome/grzayel6fcgpyj6ggvchy3yj2q_144.0.7559.60/144.0.7559.60_chrome_installer_uncompressed.exe",
+    "win64": "http://dl.google.com/release2/chrome/acz5qwfw7e6ogbe5gd3hixxbfmuq_144.0.7559.60/144.0.7559.60_chrome_installer_uncompressed.exe"
+  },
   "143.0.7499.193": {
     "mac_arm64": "http://dl.google.com/release2/chrome/negywdvxiridhsd2tz7neakcju_143.0.7499.193/GoogleChrome-143.0.7499.193.dmg",
     "mac": "http://dl.google.com/release2/chrome/negywdvxiridhsd2tz7neakcju_143.0.7499.193/GoogleChrome-143.0.7499.193.dmg",
