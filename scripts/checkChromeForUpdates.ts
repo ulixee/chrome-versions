@@ -46,6 +46,7 @@ async function getChromeUpdateUrls(os: 'win' | 'mac', arch: 'x64' | 'x86' | 'arm
 
   const { response } = await parser.parseStringPromise(request.data);
 
+  console.log('Response', JSON.stringify(response, null, 2));
   const update = response.app.updatecheck;
 
   const version = update.manifest.$.version;
