@@ -19,12 +19,9 @@ async function getChromeUpdateUrls(os: 'win' | 'mac', arch: 'x64' | 'x86' | 'arm
 
   const postData = `<?xml version="1.0" encoding="UTF-8"?><request protocol="3.0"><os platform="${os}" version="${ver}" arch="${arch}"/><app appid="${appid}" version=""><updatecheck/></app></request>`;
 
-  const request = await Axios.post('https://update.googleapis.com/service/update2', postData, {
+  const request = await Axios.post('https://tools.google.com/service/update2', postData, {
     headers: {
       'Content-Type': 'application/xml',
-      'User-Agent': 'Google Update/1.3.36.352;winhttp;cup-ecdsa',
-      'X-Goog-Update-AppId': appid,
-      'X-Goog-Update-Updater': 'Omaha-1.3.36.352',
     },
   });
 
