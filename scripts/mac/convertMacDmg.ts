@@ -22,7 +22,11 @@ export default async function convertMacDmg(
 
   console.log('Modifying Chrome@%s', chromeVersion, downloadedDmg);
 
-  await extractDmg(downloadedDmg, tmp);
+  if (downloadedDmg.endsWith('.crx3')) {
+    await extractCrx3(downloadedDmg, tmp);
+  } else {
+    await extractDmg(downloadedDmg, tmp);
+  }
 
   console.log('Removing app signing at %s', `${tmp}/Google Chrome.app`);
 
@@ -45,6 +49,51 @@ export default async function convertMacDmg(
 
   await createTarGz(extractToPath, `${tmp}`, ['Google Chrome.app']);
   console.log(`${chromeVersion} for mac converted`);
+}
+
+async function extractCrx3(downloaded: string, extractTo: string) {
+  const buffer = Fs.readFileSync(downloaded);
+  const magic = buffer.subarray(0, 4).toString('utf8');
+  if (magic !== 'Cr24') throw new Error(`Unexpected CRX3 magic: ${magic}`);
+
+  const headerSize = buffer.readUInt32LE(8);
+  const zipStart = 12 + headerSize;
+  const zipPath = path.join(extractTo, 'chrome.crx3.zip');
+  Fs.writeFileSync(zipPath, buffer.subarray(zipStart));
+
+  const unzipCommand = `ditto -x -k "${zipPath}" "${extractTo}"`;
+  console.log(unzipCommand);
+  execSync(unzipCommand);
+
+  const appPath = findAppPath(extractTo);
+  if (!appPath) throw new Error(`Cannot find "Google Chrome.app" in ${extractTo}`);
+
+  const target = path.join(extractTo, 'Google Chrome.app');
+  if (appPath !== target) {
+    Fs.cpSync(appPath, target, { recursive: true });
+  }
+}
+
+function findAppPath(root: string): string | undefined {
+  const entries = Fs.readdirSync(root, { withFileTypes: true });
+  for (const entry of entries) {
+    if (entry.isDirectory() && entry.name.endsWith('.app')) {
+      return path.join(root, entry.name);
+    }
+  }
+
+  for (const entry of entries) {
+    if (!entry.isDirectory()) continue;
+    const nested = path.join(root, entry.name);
+    const nestedEntries = Fs.readdirSync(nested, { withFileTypes: true });
+    for (const n of nestedEntries) {
+      if (n.isDirectory() && n.name.endsWith('.app')) {
+        return path.join(nested, n.name);
+      }
+    }
+  }
+
+  return undefined;
 }
 
 async function extractDmg(downloaded: string, extractTo: string) {

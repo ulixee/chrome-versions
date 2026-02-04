@@ -18,8 +18,9 @@ export { downloadsDir, assetsDir };
 
 mkdirIfNeeded(downloadsDir);
 
-export function getDownloadPath(os: string, version: string): string {
-  return Path.join(downloadsDir, `chrome_${version}_${os}.${fileExts[os]}`);
+export function getDownloadPath(os: string, version: string, extOverride?: string): string {
+  const ext = extOverride ?? fileExts[os];
+  return Path.join(downloadsDir, `chrome_${version}_${os}.${ext}`);
 }
 
 export function mkTempDir(): string {

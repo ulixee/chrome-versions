@@ -1,5 +1,6 @@
 import * as Fs from "fs";
 import Axios from "axios";
+import * as Path from "path";
 import { getDownloadPath } from "./dirUtils";
 
 export async function downloadInstaller(
@@ -8,7 +9,16 @@ export async function downloadInstaller(
   chromeVersion: string,
   headers?: { [key: string]: string },
 ) {
-  const destinationPath = getDownloadPath(chromeOs, chromeVersion);
+  let extOverride: string | undefined;
+  try {
+    const pathname = new URL(url).pathname;
+    const ext = Path.extname(pathname).replace('.', '');
+    if (ext) extOverride = ext;
+  } catch {
+    // ignore url parse errors
+  }
+
+  const destinationPath = getDownloadPath(chromeOs, chromeVersion, extOverride);
 
   if (Fs.existsSync(destinationPath)) return destinationPath;
 
