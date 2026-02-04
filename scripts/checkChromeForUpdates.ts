@@ -1,5 +1,6 @@
 import Axios from 'axios';
 import xml2js from 'xml2js';
+import { v1 as uuid } from 'uuid';
 import Versions from './Versions';
 
 const parser = new xml2js.Parser({ explicitArray: false, async: true });
@@ -13,11 +14,29 @@ const appidByOs = {
   mac: 'com.google.Chrome',
 };
 
+const aplist = {
+  win_stable_x86: '-multi-chrome',
+  win_stable_x64: 'x64-stable-multi-chrome',
+  mac_stable_x86: '',
+  mac_stable_x64: '',
+  mac_stable_arm64: '',
+};
+
 async function getChromeUpdateUrls(os: 'win' | 'mac', arch: 'x64' | 'x86' | 'arm64') {
   const ver = versionsByOs[os];
   const appid = appidByOs[os];
+  const ap = aplist[`${os}_stable_${arch}`];
 
-  const postData = `<?xml version="1.0" encoding="UTF-8"?><request protocol="3.0"><os platform="${os}" version="${ver}" arch="${arch}"/><app appid="${appid}" version=""><updatecheck/></app></request>`;
+  const postData = `<?xml version='1.0' encoding='UTF-8'?>
+<request protocol='3.0' version='1.3.23.9' shell_version='1.3.21.103' ismachine='0'
+    sessionid='{${uuid()}}' installsource='ondemandcheckforupdate'
+    requestid='{CD7523AD-A40D-49F4-AEEF-8C114B804658}' dedup='cr'>
+    <hw sse='1' sse2='1' sse3='1' ssse3='1' sse41='1' sse42='1' avx='1' physmemory='12582912' />
+    <os platform='${os}' version='${ver}' arch='${arch}'/>
+    <app appid='${appid}' ap='${ap}' version='' nextversion='' lang='' brand='GGLS' client=''>
+        <updatecheck/>
+    </app>
+</request>`;
 
   const request = await Axios.post('https://tools.google.com/service/update2', postData, {
     headers: {
