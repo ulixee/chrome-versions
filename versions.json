@@ -9,6 +9,9 @@
     "linux": "http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_144.0.7559.132-1_amd64.deb",
     "linux_rpm": "http://dl.google.com/linux/chrome/rpm/stable/x86_64/google-chrome-stable-144.0.7559.132-1.x86_64.rpm"
   },
+  "144.0.7559.112": {
+    "mac": "http://dl.google.com/release2/chrome/acpbc7rz57sgcuzb67heiwlakvta_144.0.7559.112/com-google-chrome_144.0.7559.112_all_adnipfmqn6ssranyia4lpoklgezq.crx3"
+  },
   "144.0.7559.109": {
     "linux": "http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_144.0.7559.109-1_amd64.deb",
     "linux_rpm": "http://dl.google.com/linux/chrome/rpm/stable/x86_64/google-chrome-stable-144.0.7559.109-1.x86_64.rpm"
