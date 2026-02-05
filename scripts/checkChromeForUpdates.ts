@@ -37,7 +37,7 @@ function buildUpdate2Url(body: string) {
 
 async function getChromeUpdateUrls(os: 'win' | 'mac', arch: 'x64' | 'x86' | 'arm64') {
   if (os === 'mac') {
-    await getChromeUpdateUrlsMacJson(arch);
+    await getChromeUpdateUrlsMacJson(arch as any);
     return;
   }
 
