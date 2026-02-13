@@ -1,4 +1,12 @@
 {
+  "145.0.7632.68": {
+    "win32": "http://dl.google.com/release2/chrome/ad2sy4tcrkziza4vm7wzgzepwamq_145.0.7632.68/145.0.7632.68_chrome_installer_uncompressed.exe",
+    "win64": "http://dl.google.com/release2/chrome/acqjif3p26wxp6x6biz5fy2dbtsa_145.0.7632.68/145.0.7632.68_chrome_installer_uncompressed.exe"
+  },
+  "145.0.7632.67": {
+    "linux": "http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_145.0.7632.67-1_amd64.deb",
+    "linux_rpm": "http://dl.google.com/linux/chrome/rpm/stable/x86_64/google-chrome-stable-145.0.7632.67-1.x86_64.rpm"
+  },
   "145.0.7632.46": {
     "win32": "http://dl.google.com/release2/chrome/acfhz5fh2ovvcncvnupvyox5jmxq_145.0.7632.46/145.0.7632.46_chrome_installer_uncompressed.exe",
     "win64": "http://dl.google.com/release2/chrome/ackgansaa37qfheeulunwvu5wtoa_145.0.7632.46/145.0.7632.46_chrome_installer_uncompressed.exe"
