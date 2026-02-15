@@ -27,6 +27,9 @@
   "144.0.7559.135": {
     "mac_arm64": "http://dl.google.com/release2/chrome/acmoxlce3sn5yzo4if6u7zinwgwa_144.0.7559.135/com-google-chrome_144.0.7559.135_all_acd5cwaky2tjpxab3p7twwbmwcda.crx3"
   },
+  "144.0.7559.134": {
+    "mac_arm64": "http://dl.google.com/release2/chrome/adfag233bg3ac3uhpvhdpt3pwldq_144.0.7559.134/com-google-chrome_144.0.7559.134_all_anpnwwyit4b7tdcfjszi5pryem.crx3"
+  },
   "144.0.7559.133": {
     "win32": "http://dl.google.com/release2/chrome/acw2xz4tfj7k5bp6r7l53svhuktq_144.0.7559.133/144.0.7559.133_chrome_installer_uncompressed.exe",
     "win64": "http://dl.google.com/release2/chrome/ace6zn6fr5cgu25rmizns7oamjoa_144.0.7559.133/144.0.7559.133_chrome_installer_uncompressed.exe",
