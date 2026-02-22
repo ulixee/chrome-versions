@@ -9,7 +9,8 @@
     "linux_rpm": "http://dl.google.com/linux/chrome/rpm/stable/x86_64/google-chrome-stable-145.0.7632.109-1.x86_64.rpm"
   },
   "145.0.7632.77": {
-    "mac_arm64": "http://dl.google.com/release2/chrome/dk2orwui45mbmajm37j42godne_145.0.7632.77/com-google-chrome_145.0.7632.77_all_acblr2bvvjj45v73tdw3x6gmn53q.crx3"
+    "mac_arm64": "http://dl.google.com/release2/chrome/dk2orwui45mbmajm37j42godne_145.0.7632.77/com-google-chrome_145.0.7632.77_all_acblr2bvvjj45v73tdw3x6gmn53q.crx3",
+    "mac": "http://dl.google.com/release2/chrome/dk2orwui45mbmajm37j42godne_145.0.7632.77/com-google-chrome_145.0.7632.77_all_acblr2bvvjj45v73tdw3x6gmn53q.crx3"
   },
   "145.0.7632.76": {
     "win32": "http://dl.google.com/release2/chrome/f5dzdchpsjuh6xknkth7dj7fla_145.0.7632.76/145.0.7632.76_chrome_installer_uncompressed.exe",
