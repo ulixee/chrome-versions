@@ -1,4 +1,7 @@
 {
+  "146.0.7680.66": {
+    "mac_arm64": "http://dl.google.com/release2/chrome/ad63adors4jpi2lgyxit7ouidita_146.0.7680.66/com-google-chrome_146.0.7680.66_all_adw5azdowgrhi22gxjsscuxb7zoq.crx3"
+  },
   "145.0.7632.160": {
     "win32": "http://dl.google.com/release2/chrome/ad4munnxzifdyrychahurtkhfesq_145.0.7632.160/145.0.7632.160_chrome_installer_uncompressed.exe",
     "win64": "http://dl.google.com/release2/chrome/nuloamky47wcog6772kpqu2zyu_145.0.7632.160/145.0.7632.160_chrome_installer_uncompressed.exe",
